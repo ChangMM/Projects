@@ -1,0 +1,5 @@
+{"file":"shiyan2.png","frames":{
+"pause":{"x":1,"y":1,"w":50,"h":61,"offX":1,"offY":1,"sourceW":51,"sourceH":62},
+"play":{"x":1,"y":64,"w":661,"h":197,"offX":1,"offY":0,"sourceW":663,"sourceH":198},
+"btnbg":{"x":664,"y":1,"w":687,"h":127,"offX":0,"offY":0,"sourceW":687,"sourceH":127},
+"logo":{"x":664,"y":130,"w":1215,"h":1217,"offX":0,"offY":0,"sourceW":1216,"sourceH":1218}}}

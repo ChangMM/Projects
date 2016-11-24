@@ -1,0 +1,14 @@
+{
+  "resources":
+    [
+      {"url":"assets/res.json","type":"sheet","name":"res_json"},
+      {"url":"assets/bg.png",   "type":"image","name":"bgImage"},
+      {"url":"assets/overpanel.png",   "type":"image","name":"overbg"},
+      {"url":"assets/top.png",   "type":"image","name":"topImage"}
+    ],
+
+  "groups":
+    [
+      {"name":"gameres","keys":"res_json,bgImage,overbg,topImage"}
+    ]
+}
