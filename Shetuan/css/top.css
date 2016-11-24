@@ -1,0 +1,35 @@
+body{background-color:#eee; }
+*{margin:0px; padding:0px; font-family:"微软雅黑";}
+a{text-decoration:none; color:#000; }
+a:hover{color:orange;}
+
+/*主菜单的样式*/
+#top{width:100%; height:50px; background-color:#FFF;position:fixed; top:0px; box-shadow:1px 1px 3px #666; z-index:1000;  }
+#top img{float:left;margin-left:15px;  }
+/*#top p.top-title{width:200px;height:50px;text-align:center;line-height:50px;font-size:20px; 
+	display:inline-block; background-color:#eee; margin-right:40px;  margin-left:30px;}*/
+ul.top-item{display:inline-block;}
+ul.top-item li{display:inline-block;height:50px; width:80px; line-height:50px; font-size:18px;
+		text-align:center; cursor:pointer; list-style:none outside none;margin-left:-7px;  }
+ul.top-item li:hover{background-color:rgba(0,153,204,0.1)}
+ul.top-item li+li{border-left:dashed 1px #000;}
+ul.top-item li.selected{background-color:#eee;}
+
+div.top-right{height:50px; float:right;margin-right:30px; }
+div.top-right img.top-authorlogo{ margin-top:5px;right:200px;}
+div.top-right p{display:inline-block; height:50px; line-height:50px; margin-left:15px;  } 
+#top p.exit{font-size:15px;}
+#top p.exit a{color:orange;}
+#top p.aicre{font-size:20px;} 
+
+/*子菜单的样式*/
+#sub-top{width:100%; height:50px; margin-top:50px; border-bottom:2px #ccc solid; }
+#sub-top p{height:50px; width:100px; display:inline-block; font-size:16px; line-height:50px;
+			text-align: center;cursor:pointer;  }
+#sub-top p.list{ margin-left:180px; }
+#sub-top a+a{margin-left:50px;}
+#sub-top p:hover{background-color:rgba(0,153,204,0.1);}
+#sub-top p.selected{ border-bottom:4px #1aa3e7 solid; }
+
+/*界面中main的样式*/
+#main{width:1000px; margin:0 auto; top-margin:30px;background-color:#fff; min-height:500px;margin-bottom:50px; padding-bottom:30px;}

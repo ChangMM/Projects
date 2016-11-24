@@ -1,0 +1,14 @@
+@import url(top.css);
+#main{width:1000px; margin:0 auto; margin-top:30px;background-color:#fff; min-height:500px;margin-bottom:50px; padding-bottom:30px;   }
+div.head{width:960px; margin:0 auto; height:40px; border-bottom:1px solid #ddd; }
+div.head p{display:inline-block;height:40px; width:100px; font-size:15px; text-align:center;line-height:40px; }
+
+div.intro{width:860px;margin:0 auto; margin-top:10px; background-color:#ddd;padding:10px 50px 10px 50px;  }
+
+div.content{width:760px; margin:0 auto;padding:30px 100px 60px 100px;}
+div.content input{height:40px; width:400px; display:inline-block; margin-bottom:30px;font-size:20px;} 
+div.content div.select{height:40px;margin-bottom:30px; }
+div.content select{width:100px; height:30px; margin-right:100px; }	
+/*#editotr{width:600px; margin:0 auto; margin-bottom:30px;  }*/
+div.content button{height:30px; width:150px; float:right; margin-top:30px; background-color:#ddd;
+					font-size:18px; cursor:pointer; }

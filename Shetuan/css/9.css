@@ -1,0 +1,29 @@
+@import url(top.css);
+#main{width:1000px; margin:0 auto; margin-top:30px;background-color:#fff; min-height:500px;margin-bottom:50px; padding-bottom:30px;   }
+div.head{width:960px; margin:0 auto; height:40px; border-bottom:1px solid #ddd; }
+div.head p{display:inline-block;height:40px; font-size:18px; text-align:center;line-height:40px; }
+div.head .head-right {float:right;font-size:14px;}
+div.head .head-right a{color:#1aa3e7;}
+
+div.content{width:960px; margin:0 auto;}
+div.content-title{width:100%; height:60px;}
+div.content-title div{height:60px; display:inline-block; padding-top:20px;   margin-right:20px;color:#bbb;  } 
+div.content-title div img{margin-right:5px;position:relative;top:5px;cursor:pointer; }
+div.content-title div.theme{font-size:30px; font-weight:bold; padding:15px;padding-left:0px; color:#000;}
+div.content-title div.time,div.interset,div.content-title-remark{font-size:13px;}
+
+div.content-detail{width:100%;padding:50px 100px 50px 80px;font-size:18px; border-bottom:dashed 1px #ddd;color:#555; }
+div.content-detail{width:500px;}
+
+div.remark{width:800px; color:#555;padding-right:50px; padding-left:50px; margin-bottom:10px; border-bottom:dashed 1px #b2b0b0;}
+div.remark p img{position:relative; top:3px; margin-right:10px;  }
+div.avtar{width:40px;  position:relative;float:left; top:20px;cursor:pointer;  }
+div.remark-detail{width:800px; display:inline-block; margin-left:10px; margin-bottom:20px; }
+div.remark-detail p.remark-username{margin-top:15px; margin-bottom:5px; }
+p.remark-username a{color:#1aa3e7;}
+div.remark-foot{margin-top:10px; }
+div.remark-foot p{display:inline-block;  text-align:center; color:#b2b2b0; font-size:13px; }
+div.remark-foot p.fadeback {margin-left:40px;color:#b2b2b0;}
+div.remark-foot p.fadeback:hover{color:orange;cursor:pointer; }
+
+/**回复框**/

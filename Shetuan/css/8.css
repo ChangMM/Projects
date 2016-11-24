@@ -1,0 +1,20 @@
+@import url(top.css);
+#main{width:1000px; margin:0 auto; margin-top:30px;background-color:#fff;min-height:500px;margin-bottom:50px; padding-bottom:30px;   }
+div.head{width:960px; margin:0 auto; height:40px; border-bottom:1px solid #ddd;}
+div.head p{display:inline-block;height:40px;  font-size:20px; text-align:center;line-height:40px;  }
+
+div.content{width:960px;margin:0 auto;/*border:1px solid #ddd;*/ height:100%;}
+div.content div.left{width:802px; height:100%;display:inline-block;  }
+div.content div.right{width:150px;float:right; border-left:1px solid #ddd;  height:100%; display:inline-block; }
+
+table{width:100%;}
+ th {text-align: left;font-size:16px; text-shadow: 0 1px 0 rgba(255,255,255,.5);border-bottom: 1px solid #ccc;}
+ /*td:first-child,th:first-child{text-align:left; padding-left:20px; }*/
+table td:first-child input{position:relative; bottom:15px;width:30px; }
+table th:first-child input{margin-right:5px; }
+table td, table th {padding:10px 0 10px 0;border-bottom: 1px solid #f2f2f2;text-align:center; }			
+div.right div{width:150px; height:40px;line-height:40px;text-align:center; 
+	border-bottom:1px solid #ddd;border-right:1px solid #ddd;cursor:pointer;}
+div.right div.selected{background-color:#eee;}
+div.right div:hover{background-color:#eee;color:#000; }
+div.right div.new-list img.add{position:relative; top:5px;margin-right:5px; }

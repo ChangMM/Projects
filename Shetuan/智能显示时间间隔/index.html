@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+		<meta charset="utf-8" />
+		<title>Smart Time Ago Demo By GBin1.com</title>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="../jquery.min.js"></script>
+		<script src="js/timeago.js"></script>
+		<script src="js/locales/timeago.zh-cn.js"></script>
+		<script type="text/javascript">
+		
+		$(function(){
+			$('body').timeago();
+		});
+
+		</script>
+		<style>
+body {
+	background: #202020;
+	color: #CCC;
+	margin:0px;
+	padding:0px;
+	font-family: Arial;
+}
+.titleinfo {
+	height:30px;
+	color:#FFF;
+	background-color:#000;
+	opacity:0.5;
+	line-height:30px;
+	padding:0 20px;
+	font-size:14px;
+	margin-bottom:30px;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+	color:#FFF;
+	text-decoration:none;
+}
+.clear {
+	clear:both;
+}
+p {
+	padding: 15px 5px 15px;
+	border-bottom: 1px solid #505050;
+	margin: 18px 2px 2px 0px;
+	font-size:12px;
+	box-shadow: 1px 1px 10px #808080;
+	border-radius: 8px;
+	border-left: 3px solid #CCC;
+}
+.timeago {
+	font-size:12px;
+	color: #808080;
+	margin: 25px 5px;
+}
+.timeLabels {
+	margin: 50px 0 40px 0;
+	width: 600px;
+	margin: 0 auto;
+	background: #202020;
+	border-radius: 8px;
+	padding:50px 0 40px 0;
+}
+</style>
+		</head>
+		<body>
+<div class="titleinfo"> <span class="left"></span> <span><a href="http://www.jiawin.com/time-jquery-plugin/" class="right">←返回文章</a></span>
+          <div class="clear"></div>
+        </div>
+<div class="timeLabels">
+          <h1>Comments:</h1>
+          <p> I really like jiawin.com
+    <time class="timeago" datetime="2014-08-19T8:41:50Z">about 9 hours later</time>
+  </p>
+          <p> Agree!
+    <time class="timeago" datetime="2012-08-18T06:51:50Z">about 5 month ago</time>
+  </p>
+          <p> Very good website ...
+    <time class="timeago" datetime="2012-05-18T06:51:50Z">about 9 hours later</time>
+  </p>
+          <p> Very good website ...
+    <time class="timeago" datetime="2012-01-18T06:51:50Z">about 5 month ago</time>
+  </p>
+          <p> It has many good jquery plugins ...
+    <time class="timeago" datetime="2014-08-19T07:51:50Z">about 1 year ago</time>
+  </p>
+        </div>
+</body>
+</html>
