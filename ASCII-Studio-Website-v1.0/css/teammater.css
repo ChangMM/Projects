@@ -1,0 +1,93 @@
+
+#mainwrapper { 
+	font: 10pt normal Arial, sans-serif;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	width:1000px;
+	overflow:hidden; 
+}
+
+#mainwrapper .box {
+	border-radius:3px;
+	cursor: pointer;
+	height: 182px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	width: 200px;
+}
+#mainwrapper .box img {
+	position: absolute;
+	left: 0;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+	transition: all 300ms ease-out;
+}
+
+
+#mainwrapper .box .caption {
+	background-color:rgba(0,0,0,0.5);
+	position: absolute;
+	z-index: 100;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+		transition: all 300ms ease-out;
+	left: 0;
+}
+
+
+ #mainwrapper .box .scale-caption  {
+	opacity: 0;
+	width: 170px;
+	height: 170px;
+	text-align: left;
+	padding: 15px;
+}
+
+#mainwrapper .box .scale-caption h3, #mainwrapper .box .scale-caption p {
+	position: relative;
+	left: -200px;
+	width: 170px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;	
+	transition: all 300ms ease-out;
+}
+
+#mainwrapper .box .scale-caption h3 {
+	font-size:22px;font-family:"微软雅黑";font-weight:normal;color:#58a6fb; 
+	margin-top:-5px; 
+	margin-bottom:20px;    
+	-webkit-transition-delay: 200ms;
+	-moz-transition-delay: 200ms;
+	-o-transition-delay: 200ms;
+	-ms-transition-delay: 200ms;	
+	transition-delay: 200ms;
+}
+
+#mainwrapper .box .scale-caption p {
+	font-size:18px;font-family:"微软雅黑";font-weight:normal;color:#fff; 
+	margin:0;margin-top:5px;   
+	-webkit-transition-delay: 400ms;
+	-moz-transition-delay: 400ms;
+	-o-transition-delay: 400ms;
+	-ms-transition-delay: 400ms;	
+	transition-delay: 400ms;
+}
+
+ #mainwrapper .box:hover .scale-caption  {
+	opacity: 1;
+}
+
+#mainwrapper .box:hover .scale-caption h3, #mainwrapper .box:hover .scale-caption p {
+	-moz-transform: translateX(200px);
+	-o-transform: translateX(200px);
+	-webkit-transform: translateX(200px);
+	transform: translateX(200px);
+}

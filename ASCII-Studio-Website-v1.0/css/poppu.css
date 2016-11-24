@@ -1,0 +1,23 @@
+  div.PopupLayer{
+    background:#fff;
+	position: relative;
+	width:600px;
+	height:500px;
+	margin-top:-660px;
+    margin-left:400px; 
+	border-radius:10px;
+	border:2px solid #eee;
+	z-index: 1000;
+	opacity:1; 
+}
+div.PopupLayer a#close_poppubg{
+	display:block;
+	width:30px;
+	height:30px;
+	float:right;
+	background:url(../images/close.jpg) no-repeat;
+	overflow:hidden;
+}
+.PopupLayer a#close_poppubg:hover{
+	background-position:-30px;
+}

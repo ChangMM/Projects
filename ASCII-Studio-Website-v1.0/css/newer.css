@@ -1,0 +1,47 @@
+#nav ul {
+	margin:0 auto;margin-left: 1em;margin-bottom: 2em;
+	padding: 0; }
+
+
+#nav {
+	position: fixed;top:120px;left:120px;margin: 0;border-radius:5px; 
+	list-style: none;background-color:#ededed;width:120px;height:150px;	
+}
+#nav li {  margin-top: 12px;  }
+#nav a {border-radius:5px; text-transform:uppercase;
+	color: #666;text-decoration:none;font-size:18px;font-family:"微软雅黑";font-weight:normal;  
+	display:block;margin:0 auto; text-align:center;width:60px; height:35px;line-height:35px;  
+}
+#nav a:hover { background: #cedede;}
+#nav .current a {  background: #58a6fb;color: #eef;}
+#new-info-container{ margin:0 auto; width: 800px;}
+.section {   min-height:600px;width:800px;}
+.section .content{width:800px; min-height:500px;border-radius:10px;font-family:"微软雅黑";
+	              border-bottom: 5px solid #ccc;background-color:#ededed;}
+#intro .content{padding:50px 100px;font-size:18px;}
+#intro .content p{margin-bottom:20px; padding-left:20px; color:#666;  }
+#intro .content span{font-size:25px; font-weight:bold; color:#58a6fb;  }
+#newer-form .content{color:#666;padding-top:30px;}
+#newer-form .content p{text-align:center; font-size:30px;color:#58a6fb; }
+/****负责人****/
+/*
+.person-head{width:100%; height:60px;font-family:"微软雅黑"; font-size:25px; font-weight:normal;color:#666; 
+			border-bottom:1px solid #ededed; box-shadow:1px -1px 20px #eee;  }
+.person-head p:hover{color:orange; cursor:pointer; }
+.person-head p{display:inline-block; text-align:center;border-left:2px solid #ededed;
+				 height:60px; width:192px; line-height:60px;  }
+.person-head p:first-child{border-left:none;}
+.person{overflow:hidden;position:absolute; }
+.person .same-style{ padding:20px 50px; width:700px; height:300px;position:absolute;
+					font-size:20px;font-weight:normal;font-family:"微软雅黑";color:#666;}
+.person .same-style p{height:50px; width:500px;margin:0 auto; margin-bottom:20px;line-height:50px;  
+}
+.web-content{  }
+.android-content{ top:-350px; }
+.design-content{ top:-350px;}
+*/
+/****负责人****/
+
+.section:last-child {margin-bottom:0;}
+
+.blank{width:800px;height:100px;background-color:#fff; }

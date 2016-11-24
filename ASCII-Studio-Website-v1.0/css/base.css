@@ -1,0 +1,83 @@
+p{margin:0;padding:0;}
+a{text-decoration:none;}
+img{border:0;}
+body,html{margin:0; padding:0;}
+*{padding:0; margin:0; list-style:none; }
+ul{list-style:none;}
+
+/**********************head部分**************************/
+#header{
+	 }
+
+/**********************head部分**************************/
+/**********************竖直导航栏部分**************************/
+#ymenu{ width:200px; height:100%;position:fixed;background-color:#ddd;display:none; 
+	    z-index:1000; top:0; box-shadow: 3px 0px 10px #dfded4; padding:0;margin:0;
+	    
+ }   
+
+#ymenu .sub_ymenu{width:150px; height:80px;/*background-color:orange;*/ text-align: center; }
+#ymenu .sub_ymenu p{height:50px;line-height:50px;width:100px;margin-top:15px; 
+					font-family: sans-serif;font-size:20px;font-style: normal; color:#666;
+	                float:left;/*background-color:white;*/ display:inline-block;/*opacity:0.5;*/}
+#ymenu .sub_ymenu img{/* margin-left: 100px;*/ margin-top:20px;opacity:0.5; }
+#ymenu .sub_ymenu:hover{background-color:#ddd; cursor:pointer;}
+#ymenu .sub_ymenu p:hover,#ymenu .sub_ymenu img:hover{opacity:1; cursor:pointer; }
+#ymenu .logo{margin-top:60px;height:100px;}
+#ymenu .logo img{margin-top:0;margin-left:25px;}
+/**********************竖直导航栏部分**************************/
+
+/**********************图片轮播部分**************************/
+
+/**********************图片轮播部分**************************/
+/**********************主体内容部分**************************/
+#content{width:1000px;height:100%;  margin:0 auto;margin-top:120px; }
+#team_info{
+	width:1000px; height:320px; /*background-color:#777;*/border-top:1px solid #eee; margin-top: 40px;
+	box-shadow:-1px -1px 5px #eee, 1px 1px 5px #eee;
+}
+#team_info .title{height:50px;font-family:"微软雅黑";font-size:25px;color:#666;font-weight:normal;
+                  /*position:relative;*/ margin-left:60px;line-height:50px; }
+#team_info .team_detail{width:700px;height:250px;margin-left:200px; } 
+#team_info .team_detail .detail{width:200px; height:250px; display:inline-block;
+								border:1px solid #eee;padding:0;margin:0;
+								-webkit-transition:0.5s all ease;
+								-moz-transition:0.5s all ease;
+								-ms-transition:0.5s all ease;
+								-o-transition:0.5s all ease;
+								transition:0.5s all ease; }
+#team_info .team_detail .detail .img{margin-left:50px; margin-top:0px;margin-bottom:20px; overflow:hidden;width:100px;height:100px;}
+#team_info .team_detail .detail img{margin-top:0px; overflow:hidden;width:100px;height:100px;z-index:2;}
+#team_info .team_detail .detail:hover{box-shadow:1px 1px 5px black;  cursor: pointer; 
+								-webkit-transition:0.5s all ease;
+								-moz-transition:0.5s all ease;
+								-ms-transition:0.5s all ease;
+								-o-transition:0.5s all ease;
+								transition:0.5s all ease;}
+p.sub_title{text-align: center; height:50px;line-height:50px;  }
+p.sub_info{ text-align: center; height:30px;line-height:30px; }
+.detail{font-family:"微软雅黑";color:#666;font-size:15px;/*font-weight:normal;*/}
+/**********************主体内容栏部分**************************/
+#footer{
+	/*margin-bottom:60px; */
+}
+
+#copyright{width:100%;height:80px;  border-top:1px solid #dfded4; margin-top:40px; 
+	       box-shadow:0 0 0.1em #dfded4;   background-color:#eee; overflow:hidden; 
+	   }
+	       #copyright .middle{width:1000px;height:80px; margin:auto; margin-top:15px; }
+	       #copyright .left{height:80px;width:250px;display:inline-block;}
+	       #copyright .left img{margin:0; float:left;} /*底部logo*/
+	       #copyright .img{font-size:15px;font-weight:normal;font-family:"微软雅黑";color:#666;
+	       					margin-left:70px;position:relative;top:6px; }
+	       	#copyright .right{height:80px;width:650px; float:right; display:inline-block; 
+	       					/*margin-left: 300px;*/}
+	       	.right_footer{height:80px; width:80px;text-align:center; display: inline-block;}				
+			.right_footer p{/*border-right:1px solid white;*/font-size:15px;line-height:60px; 
+				          font-family: "微软雅黑";color:#666; font-weight: normal;}
+			.right_footer p:hover{color:orange;cursor:pointer;}
+			.right_footer p:first{}
+.copyright{position:fixed; bottom:0;}
+
+/**********************head部分**************************/
+

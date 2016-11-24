@@ -1,0 +1,113 @@
+                    form{
+                                /*background-color:#fff*/;
+                                width:800px;
+                                padding:50 70;
+                                font-family:"微软雅黑";
+                                font-size:1.1em;
+                                margin-left:auto;
+                                margin-right:auto;
+                                position:relative;
+                                top:30px; 
+                        }
+                        .inputs,.group-input,.textareas,.buttons{
+                                width:100%;
+                        }
+                        .inputs{
+                                height:40px;
+                                margin-top:15px;
+                                line-height:40px;
+                        }
+                        .group-input{
+                                margin-top:40px;
+                                height:100px;
+                        }
+                        .group-input ul span{
+                                margin-left:10px;
+                               
+                        }
+
+                        .textareas{
+                                margin-top:20px;
+                                height:120px;
+                        }
+                        .left_word {
+                                width:30%;
+                                height:100%;
+                                float:left;
+                                text-align:right;
+                        }
+                        .right_input{
+                                width:45%;
+                                height:100%;
+                                float: right;
+                                position:relative;
+                                right:160px; 
+                        }
+                        .buttons{
+                                height:50px;
+                                text-align:right;
+                                position: relative;
+                                right:300px;
+                                margin-top:130px;
+                                margin-bottom:25px; 
+                        }
+                        .btn{width:100px;}
+                        .textareas textarea{
+                                width:85%;
+                                margin-left:20px;
+                                resize:none;
+                                height:85%;
+                        }
+                        .item{
+                                font-weight:600;
+                                font-size:1.25em;
+                        }
+                        .right_input ul {
+                                list-style-type :none;
+                                padding-left:30px;
+                                font-size:1.1em;
+                                width:100%;
+                                height:100%;
+                                margin-top:5px; 
+                        }
+                        .ways{
+                                width:50%;
+                                float:left;
+                        }
+                        #other-text{
+                                width:100px;
+                                height:40px;
+                                float:right;
+                        }
+.popup{
+    cursor:pointer;
+    visibility:hidden;
+    background:#4fb6c3; 
+    padding:2px 2px; 
+    padding-right:5px;
+    padding-left:5px;  
+    color:#fff;  
+    border-radius:4px;
+    position:absolute; 
+    top:45px; 
+   right:0%;
+   z-index:200; 
+}
+.popup.textarea{
+    top:110px;
+}
+.focus{
+    visibility:visible;
+}
+.popup span{
+    display:block; 
+    width:0; 
+    height:0; 
+    border-width:0 10px 10px; 
+    border-style:solid; 
+    border-color:transparent transparent #4fb6c3; 
+    position:absolute; 
+    top:-10px; 
+    left:50%;/*三角形居中显示*/
+    margin-left:-10px;/* 三角形居中显示 */
+}

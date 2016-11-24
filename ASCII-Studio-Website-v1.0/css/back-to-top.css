@@ -1,0 +1,22 @@
+
+#back-to-top{position:fixed;bottom:80px;right:8%;display:none;}
+#back-to-top a{text-align:center;text-decoration:none;color:#d1d1d1;display:block;width:60px;
+		-moz-transition:color 1s; 
+		-webkit-transition:color 1s;
+		-o-transition:color 1s;
+		display:none;
+	}
+#back-to-top a:hover{color:#979797;}
+#back-to-top a span{
+		background:#d1d1d1;
+		border-radius:6px;
+		display:block;
+		height:80px;width:60px;
+		background:#d1d1d1 url(../images/arrow-up.png) no-repeat center center;
+		margin-bottom:5px;
+		-moz-transition:background 0.5s;
+		-webkit-transition:background 0.5s;
+		-o-transition:background 0.5s;}
+#back-to-top a:hover span{
+		background:#979797 url(../images/arrow-up.png) no-repeat center center;
+	}

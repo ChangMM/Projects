@@ -1,0 +1,195 @@
+<html>
+<head>
+	<title>报名表</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<style type="text/css">
+	*{margin: 0; padding: 0	; font-family: 'Microsoft Yahei'}
+	body{background: #e5e5e6;  }
+	#container{ margin:5% 15%; min-height:600px;background: #fcfcfc;  overflow: hidden;} 
+	h1{text-align: center; padding-top:30px; font-weight:normal; text-shadow:1px 1px #eee;word-spacing:1.8em； }
+	form{margin:5% 10%; margin-top:30px; border: 1px solid #ccc; width: 70%; padding-left: 5%;}
+	p{padding-top:20px; }
+	input,textarea{
+		padding-left:10px;
+   		font-size:16px;
+   		border: 1px solid #cccccc;
+  		border-radius:3px;
+  		outline:none;
+   		-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+      	-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+       	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+        transition: border linear 0.2s, box-shadow linear 0.2s;
+
+   }
+	input:focus,textarea:focus,input.right,textarea.right{
+		border-color:rgba(0,153,204,1);
+  		box-shadow:0 0 6px rgba(0,153,204,0.8);
+  	}
+  	.wrong{border-color:rgba(255,100,100,1);
+  		box-shadow:0 0 6px rgba(255,100,100,0.5);
+  	}
+  	input:hover,textarea:hover{background-color:rgba(0,153,204,0.1);}
+  	input{width:250px;height:40px;}
+  	textarea{width:80%;height:20%; resize:none;padding-top:5px;margin-top:10px; }	
+	input[type='button']{ 
+			color:#444; 
+	  		cursor: pointer; border: 1px solid #cccccc;border-radius:3px; margin-bottom:30px; 
+	  		transition:all linear 0.1s;
+	  		-webkit-transition:box-shadow linear 0.1s;
+	  		-moz-transition:box-shadow linear 0.1s;
+	  		-ms-transition:box-shadow linear 0.1s;
+	  		-o-transition:box-shadow linear 0.1s;	
+ 	}
+	input[type='button']:hover{box-shadow: 0 0 6px rgba(0,153,204,0.8);}
+	input[type='radio']{width: 20px; vertical-align:middle;box-shadow:0 0 0 #fff;}
+	@media  (max-width:600px){
+		body{background: #fcfcfc;}
+		#container{margin:0;width:100%; } 
+		form{margin:0;width:100%; margin-top:20px;}
+}
+
+	</style>
+</head>
+<body>
+	<div id='container'>
+		<div id='title'>
+			<h1>报名表</h1>
+		</div>
+		<form action='#' method='post' id='myForm'>
+			<p>
+				<input type='text' id='name' name='name' placeholder='请输入姓名'><span class='right'></span>
+			</p>
+			<p>
+				性别：
+				<input type='radio' name='sex' value='man' id='man' checked='true'>
+				<label for='man'>男</label>
+				<input type='radio' name='sex' value='woman' id='woman'>
+				<label for='woman'>女</label>
+			</p>
+			<p>
+				<input type='text' name='major' id='major' placeholder='专业年级'><span class='right'></span>
+			</p>
+			<p>
+				<input type='text' name='phone' id='phone' placeholder='联系电话'><span class='right'></span>
+			</p>
+			<p>
+				<input type='text' name='phone2' id='phone2' placeholder='备用电话'><span class='right'></span>
+			</p>	
+			<p>
+				个人说明：<br/>
+				<textarea id='intro' name='intro' placeholder="让我们一下子记住你吧"></textarea>
+			</p>
+			<p>
+				你的优势:<br/>
+				<textarea id='predo' name='predo' placeholder="你这么叼，你妈妈知道吗"></textarea>
+			</p>
+			<p>
+				<input type='button' value='提交' onclick="check()" ><span class='right'></span>
+			</p>
+		</form>
+	</div>
+<script type="text/javascript">
+/***去除字符串首尾的空格**/
+function trim(str){
+    return str.replace(/^\s+|\s+$/g,"");
+}
+/**添加类名**/
+var red=document.getElementById("red");
+function addClass(node,classString){
+	if(node.className.indexOf(classString)==-1)
+		node.className=trim(node.className+" "+classString);
+	return node;
+}
+/**去除类名**/
+function removeClass(node,classString){
+	var k=node.className;
+	k=trim(k.replace(classString,""));
+	node.className=k;
+	return node;
+}
+
+/**动态切换类名**/
+function toggelClass(node,classString){
+	if(!node.className.indexOf(classString)) addClass(node,classString);
+	else removeClass(node,classString);
+}
+/***添加事件监听***/
+function addEvent(target,type,handler){
+	if(target.addEventListener){
+		target.addEventListener(type,handler,false);
+	}else{
+		target.attachEvent("on"+type,handler);
+	}
+}
+/****检查是否有某类名***/
+function hasClass(node,str){
+	if(node.className.indexOf(str)==-1)
+		return false;
+	else 
+		return true;
+}
+
+function checkName(obj){
+	if(!obj.value.match(/[\u4E00-\u9FA5]{2,5}(?:·[\u4E00-\u9FA5]{2,5})*/)){
+		removeClass(obj,"right");
+		addClass(obj,"wrong");
+		}
+	else{
+		removeClass(obj,"wrong");
+		addClass(obj,"right");
+	} 
+}
+function checkPhone(obj){
+	var reg= /^[1][358]\d{9}$/; //验证手机号码  
+	if(!reg.test(obj.value)){
+		removeClass(obj,"right");
+		addClass(obj,"wrong");
+	}else{
+		removeClass(obj,"wrong");
+		addClass(obj,"right");
+	} 
+	}
+function checkNull(obj){
+	if(obj.value==""){
+		removeClass(obj,"right");
+		addClass(obj,"wrong");
+	}else{
+		removeClass(obj,"wrong");
+		addClass(obj,"right");
+	} 
+}
+var oInput0=document.getElementById('name');
+var oInput1=document.getElementById('major');
+var oInput2=document.getElementById('phone');
+var oInput3=document.getElementById('phone2');
+var oInput4=document.getElementById('intro');
+var oInput5=document.getElementById('predo');
+
+
+function check(){
+	if(hasClass(oInput0,"right")&&hasClass(oInput2,"right")&&hasClass(oInput3,"right")&&hasClass(oInput4,"right")&&hasClass(oInput5,"right")){
+		alert("提交成功。");
+		document.getElementById('myForm').submit(); 
+	}else{
+		alert("再检查检查吧！");
+		return false;
+	}
+}
+/**我也很无语**/
+addEvent(oInput0,"focus",function(){checkName(oInput0);});
+addEvent(oInput0,"blur",function(){checkName(oInput0);});
+addEvent(oInput1,"blur",function(){addClass(oInput1,"right");});
+addEvent(oInput2,"focus",function(){checkPhone(oInput2);});
+addEvent(oInput2,"blur",function(){checkPhone(oInput2);});
+addEvent(oInput3,"focus",function(){checkPhone(oInput3);});
+addEvent(oInput3,"blur",function(){checkPhone(oInput3);});
+addEvent(oInput4,"focus",function(){checkNull(oInput4);});
+addEvent(oInput4,"blur",function(){checkNull(oInput4);});
+addEvent(oInput5,"focus",function(){checkNull(oInput5);});
+addEvent(oInput5,"blur",function(){checkNull(oInput5);});
+/**我也很无语**/
+</script>
+</body>
+</html>

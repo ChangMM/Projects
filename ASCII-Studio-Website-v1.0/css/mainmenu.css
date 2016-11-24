@@ -1,0 +1,67 @@
+
+
+#header{
+	width: 100%;
+	/*margin-bottom:0;*/
+	height:60px;
+	background-color:#575757;
+	opacity:0.9; 
+	position:fixed;z-index:1000;top:0px; 
+}
+.menu{ 
+	height: 60px;
+	display: block;
+
+}
+#menu2 img{/*display:inline-block;*/float:left; margin-left:40px; }
+.menu ul li:first-child{ margin-left:20px; }        /*该句很重要尤其list-style:none*/
+.menu ul li { float: left; /* 菜单子元素的内容超出不可见 */  
+			  overflow: hidden;
+			  position: relative;   /*该句考虑下？*/
+			  text-align: center;
+			  line-height: 60px; }
+.menu ul li a { /* 必须是相对定位  */ 
+			  position: relative; 
+			  display: block;
+			  width: 100px; 
+			  height: 60px; 
+			  font-family: "微软雅黑"; 
+			  font-size: 15px; 
+			  font-weight: normal; 
+			  -webkit-transition:0.2s all ease;
+			  -moz-transition:0.2s all ease;
+			  -ms-transition:0.2s all ease;
+			  -o-transition:0.2s all ease; 
+			  letter-spacing:5px;
+			  text-transform:uppercase; 
+			  text-decoration:none; 
+			  cursor: pointer; }
+.menu ul li a span { 
+			  position: absolute; 
+			  left: 0; 
+			  width: 100px; }
+.menu ul li a span.out { top: 0px; } 
+.menu ul li a span.over,.menu ul li a span.selected{ top: 0px; }
+#menu2 { /*background:#45A8DF; */
+		 width:1000px; 
+		 margin:0 auto;}
+#menu2 ul li a {color:#FFF;}
+#menu2 ul li a span.over,#menu2 ul li a span.selected { 
+				color:#333; font-size:20px;
+			    -webkit-transition:0.2s all ease;
+				-moz-transition:0.2s all ease;
+				-ms-transition:0.2s all ease;
+				-o-transition:0.2s all ease; }
+
+#menu2 ul li.nav1 a span.over,#menu2 ul li.nav3 a span.over,
+#menu2 ul li.nav4 a span.over,#menu2 ul li.nav5 a span.over,#menu2 ul li.nav6 a span.over{
+	background:#90bedf;
+}
+#menu2 ul li.nav1 a span.selected{ background: #32bdb6;  }
+#menu2 ul li.nav3 a span.selected { background: #32bdb6; }
+#menu2 ul li.nav4 a span.selected { background: #32bdb6; }
+#menu2 ul li.nav5 a span.selected，#menu2 ul li.nav6 a span.selected { background: #32bdb6; }
+#menu2 ul li.selected{border-bottom:4px solid white;box-shadow:1px -1px 3px white,-1px -1px 3px white; }
+a{text-decoration:none;outline:none; color:#666666;}
+a:hover{text-decoration:none; }
+

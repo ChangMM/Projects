@@ -1,0 +1,372 @@
+.slider .btn{
+	background-color:rgba(255,255,255,0); 
+	padding:10px;
+	border:1px solid #fff;
+	color:#fff;
+	cursor:pointer;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	border-radius:5px;
+	}
+.slider .btn:hover,.slider button{background-color:#ddd; }	
+
+.slider{
+	opacity:0.5; 
+	height:630px; 
+	position:relative;
+	color:white;
+	-moz-transition: all 2s ease-in-out 0s;
+    -webkit-transition: all 2s ease-in-out 0s;
+    -o-transition: all 2s ease-in-out 0s;
+    transition: all 2s ease-in-out 0s;
+}
+/**背景图的变化*/
+.slider.Transition1{
+	opacity:1; 
+	background:url("../images/1920x630-1.jpg");
+}
+.slider.Transition2{
+	opacity:1; 
+	background:url("../images/1920x630-2.jpg");
+}
+.slider.Transition3{
+	opacity:1; 
+	background:url("../images/1920x630-3.jpg");
+}
+.slider .main{height:630px;position:relative;overflow:hidden; }
+img.pre,img.next{position:absolute;top:260px;cursor:pointer;visibility:hidden;z-index:200;  }
+img.next{right:100px;}
+img.pre{left:100px;}
+.sliderUl{margin:0 auto;position:absolute;bottom:50px;visibility:hidden;
+			z-index:400; left:50%;  }
+.sliderUl li{ width:10px; height:10px; margin-right:8px;  border:1px solid #000; 
+ 	border-radius:10px;cursor:pointer;display:inline-block;  }
+.sliderUl li.current{background-color:#000; } 
+.sliderUl li:hover{background-color:#000; }	
+
+/***********************************************************************************************************/
+.slide-1-p1,.slide1-left,.slide1-right{position:absolute;}
+.slide1-left *,.slide1-right *{position:relative;}
+.slide1-left{width:38%;top:150px;}
+.slide1-left h1{margin-bottom:30px;}
+.slide1-left p{font-weight:normal; font-size: 20px;}
+.slide1-left button{margin-top:30px;cursor:pointer;}
+
+.slide1-right{width:334px;top:200px;right:0px;}
+.slide1-right .rightimg{z-index:500px;float:right;}
+.slide-1-p1{z-index:0;right:0px;}
+.slide-1-p2{top:-80px; right:-86px;}
+.slide-1-p4{right:81px; top:-86px;}
+
+/***********transition中的时间及样式控制**********/
+.slide1-left h1{
+	-moz-transition: all 0.5s ease-in-out 0.5s;
+    -webkit-transition: all 0.5s ease-in-out 0.5s;
+    -o-transition: all 0.5s ease-in-out 0.5s;
+    transition: all 0.5s ease-in-out 0.5s; }
+.slide1-left p{
+	-moz-transition: all 0.5s ease-in-out 0.5s;
+    -webkit-transition: all 0.5s ease-in-out 0.5s;
+    -o-transition: all 0.5s ease-in-out 0.5s;
+    transition: all 0.5s ease-in-out 0.5s;
+}
+.slide1-left button{
+    -moz-transition: all 0.5s ease-in-out 0.5s;
+    -webkit-transition: all 0.5s ease-in-out 0.5s;
+    -o-transition: all 0.5s ease-in-out 0.5s;
+    transition: all 0.5s ease-in-out 0.5s;
+}
+.slide-1-p1{
+    -moz-transition: all 1s ease-in-out 0.2s;
+    -webkit-transition: all 1s ease-in-out 0.2s;
+    -o-transition: all 1s ease-in-out 0.2s;
+    transition: all 1s ease-in-out 0.2s;
+}
+.slide-1-p2{
+    -moz-transition: all 0.5s ease-in-out 1s;
+    -webkit-transition: all 0.5s ease-in-out 1s;
+    -o-transition: all 0.5s ease-in-out 1s;
+    transition: all 0.5s ease-in-out 1s;
+}
+.slide-1-p3{
+    -moz-transition: all 0.5s ease-in-out 1.3s;
+    -webkit-transition: all 0.5s ease-in-out 1.3s;
+    -o-transition: all 0.5s ease-in-out 1.3s;
+    transition: all 0.5s ease-in-out 1.3s;
+}
+.slide-1-p4{right:81px; top:-86px;
+    -moz-transition: all 0.5s ease-in-out 1.6s;
+    -webkit-transition: all 0.5s ease-in-out 1.6s;
+    -o-transition: all 0.5s ease-in-out 1.6s;
+    transition: all 0.5s ease-in-out 1.6;
+}
+
+/*******将左右当作整体，暂时不用********/
+.slide1-right{
+    -moz-transition: all 0.8s ease-in-out 0.5s;
+    -webkit-transition: all 0.8s ease-in-out 0.5s;
+    -o-transition: all 0.8s ease-in-out 0.5s;
+    transition: all 0.8s ease-in-out 0.5s;
+}
+.slide1-left{
+    -moz-transition: all 0.8s ease-in-out 0.5s;
+    -webkit-transition: all 0.8s ease-in-out 0.5s;
+    -o-transition: all 0.8s ease-in-out 0.5s;
+    transition: all 0.8s ease-in-out 0.5s;
+}
+/*******将左右当作整体，暂时不用********/
+
+/***slider1中正常显示的样式***/
+.slide1-right{opacity:1;}
+.slide1-left h1{top:0px; opacity:1; }
+.slide1-left p{left:0px; opacity:1; }
+.slide1-left button{opacity:1; top:0px;}
+.slide-1-p1{opacity:1; }
+.slide-1-p2{opacity:1; }
+.slide-1-p3{opacity:1; }
+.slide-1-p4{opacity:1; }
+
+/***slider1中淡入前的样式***/
+.slide1-left h1.preTransition1{top:-150px;opacity:0;}
+.slide1-left p.preTransition1{left:-150px; opacity:0;}
+.slide1-left button.preTransition1{top:150px; opacity:0; }
+.slide-1-p1.preTransition1,.slide-1-p2.preTransition1,
+.slide-1-p3.preTransition1,.slide-1-p4.preTransition1{opacity:0;}
+
+/***********************************************************************************************************/
+#slider2{padding-top:50px;}
+/******position情况的确定********/
+.slide2-top,.slide-2-p1,.slide-2-p2,.slide-2-p3,.slide2-bottom{position:absolute;}
+.slide2-top *,.slide2-bottom *{position:relative;}
+/***************************/
+.slide2-top{width:100%;text-align:center;}
+.slide2-bottom{bottom:250px;left:22%;z-index:1000px;}
+.slide-2-p1,.slide-2-p2,.slide-2-p3{bottom:0px;}
+.slide2-top h1{padding-bottom:30px;}
+.slide-2-p1{left:0px;}
+.slide-2-p2{left:20%;}
+.slide-2-p3{right:0px;}
+.slide-2-p5{top:87px; left:82px;}
+.slide-2-p6{top:87px; left:-82px;}
+
+/***********transition中的时间及样式控制**********/
+.slide2-top h1{
+	-moz-transition: all 0.5s ease-in-out 0.3s;
+    -webkit-transition: all 0.5s ease-in-out 0.3s;
+    -o-transition: all 0.5s ease-in-out 0.3s;
+    transition: all 0.5s ease-in-out 0.3s;
+}
+.slide2-top p{
+	-moz-transition: all 0.5s ease-in-out 1s;
+    -webkit-transition: all 0.5s ease-in-out 1s;
+    -o-transition: all 0.5s ease-in-out 1s;
+    transition: all 0.5s ease-in-out 1s;
+}
+.slide-2-p1{
+	-moz-transition: all 0.5s ease-in-out 1.5s;
+    -webkit-transition: all 0.5s ease-in-out 1.5s;
+    -o-transition: all 0.5s ease-in-out 1.5s;
+    transition: all 0.5s ease-in-out 1.5s;
+}
+.slide-2-p2{
+	-moz-transition: all 0.5s ease-in-out 1.2s;
+    -webkit-transition: all 0.5s ease-in-out 1.2s;
+    -o-transition: all 0.5s ease-in-out 1.2s;
+    transition: all 0.5s ease-in-out 1.2s;
+}
+.slide-2-p3{
+	-moz-transition: all 0.5s ease-in-out 1.8s;
+    -webkit-transition: all 0.5s ease-in-out 1.8s;
+    -o-transition: all 0.5s ease-in-out 1.8s;
+    transition: all 0.5s ease-in-out 1.8s;
+}
+.slide-2-p4{
+	-moz-transition: all 0.8s ease-in-out 2s;
+    -webkit-transition: all 0.8s ease-in-out 2s;
+    -o-transition: all 0.8s ease-in-out 2s;
+    transition: all 0.8s ease-in-out 2s;
+
+}
+.slide-2-p5{
+	-moz-transition: all 0.5s ease-in-out 2.2s;
+    -webkit-transition: all 0.5s ease-in-out 2.2s;
+    -o-transition: all 0.5s ease-in-out 2.2s;
+    transition: all 0.5s ease-in-out 2.2s;
+
+}
+.slide-2-p6{
+	-moz-transition: all 0.5s ease-in-out 2.5s;
+    -webkit-transition: all 0.5s ease-in-out 2.5s;
+    -o-transition: all 0.5s ease-in-out 2.5s;
+    transition: all 0.5s ease-in-out 2.5s;
+}
+
+/************各元素变化前的样式**************/
+#slider2 h1.preTransition2{
+	opacity:0;
+	‐moz‐transform:translate3d(0px, -150px, 0px);
+	‐webkit‐transform:translate3d(0px, -150px, 0px);
+	‐o‐transform:translate3d(0px, -150px, 0px);
+	‐ms‐transform:translate3d(0px, -150px, 0px);
+	transform:translate3d(0px, -150px, 0px);
+}
+#slider2 p.preTransition2{
+	opacity:0;
+	‐moz‐transform:translate3d(-150px, 0px, 0px);
+	‐webkit‐transform:translate3d(-150px, 0px, 0px);
+	‐o‐transform:translate3d(-150px, 0px, 0px);
+	‐ms‐transform:translate3d(-150px, 0px, 0px);
+	transform:translate3d(-150px, 0px, 0px);
+}
+
+.slide-2-p1.preTransition2,.slide-2-p2.preTransition2,.slide-2-p3.preTransition2{
+	opacity:0;
+	‐moz‐transform:translate3d(0px, 150px, 0px);
+	‐webkit‐transform:translate3d(0px, 150px, 0px);
+	‐o‐transform:translate3d(0px, 150px, 0px);
+	‐ms‐transform:translate3d(0px, 150px, 0px);
+	transform:translate3d(0px, 150px, 0px); 
+}
+.slide-2-p4.preTransition2{
+	opacity:0;
+	‐moz‐transform:translate3d(0px, 50px, 0px);
+	‐webkit‐transform:translate3d(0px, 50px, 0px);
+	‐o‐transform:translate3d(0px, 50px, 0px);
+	‐ms‐transform:translate3d(0px, 50px, 0px);
+	transform:translate3d(0px, 50px, 0px); 
+}
+.slide-2-p5.preTransition2{
+	opacity:0;
+	moz‐transform:translate3d(-100px, 100px, 0px);
+	‐webkit‐transform:translate3d(-100px, 100px, 0px);
+	‐o‐transform:translate3d(-100px, 100px, 0px);
+	‐ms‐transform:translate3d(-100px, 100px, 0px);
+	transform:translate3d(-100px, 100px, 0px);
+}
+.slide-2-p6.preTransition2{
+	opacity:0;
+	‐moz‐transform:translate3d(100px, 100px, 0px);
+	‐webkit‐transform:translate3d(100px, 100px, 0px);
+	‐o‐transform:translate3d(100px, 100px, 0px);
+	‐ms‐transform:translate3d(100px, 100px, 0px);
+	transform:translate3d(100px, 100px, 0px);
+}
+/******************************************************************************************************/
+.slide3-left,.slide3-right,.slide-3-p1{position:absolute;}
+.slide3-right *,.slide3-left *{position:relative;}
+
+#slider3 ul li{padding:5px;font-size:30px;}
+#slider3 ul{padding-bottom:40px;}
+.slide3-left{left:0px;bottom:120px;}
+.slide3-right{right:-150px; top:250px;}
+.slide-3-p1{right:0px; bottom:0px;}
+.slide-3-p2{left:182px;}
+.slide-3-p3,.slide-3-p5{top:81px;}
+.slide-3-p3{left:91px;}
+.slide-3-p5{right:91px;}
+.slide-3-p6{right:182px;}
+
+/***********transition中的时间及样式控制**********/
+.slide-3-p1{
+    -moz-transition: all 0.5s ease-in-out 0.4s;
+    -webkit-transition: all 0.5s ease-in-out 0.4s;
+    -o-transition: all 0.5s ease-in-out 0.4s;
+    transition: all 0.5s ease-in-out 0.4s;
+}
+
+ul .li1{
+    -moz-transition: all 0.5s ease-in-out 0.7s;
+    -webkit-transition: all 0.5s ease-in-out 0.7s;
+    -o-transition: all 0.5s ease-in-out 0.7s;
+    transition: all 0.5s ease-in-out 0.7s;
+}
+ul .li2{
+    -moz-transition: all 0.5s ease-in-out 1s;
+    -webkit-transition: all 0.5s ease-in-out 1s;
+    -o-transition: all 0.5s ease-in-out 1s;
+    transition: all 0.5s ease-in-out 1s;
+}
+ul .li3{
+    -moz-transition: all 0.5s ease-in-out 1.3s;
+    -webkit-transition: all 0.5s ease-in-out 1.3s;
+    -o-transition: all 0.5s ease-in-out 1.3s;
+    transition: all 0.5s ease-in-out 1.3s;
+}
+ul .li4{
+    -moz-transition: all 0.5s ease-in-out 1.6s;
+    -webkit-transition: all 0.5s ease-in-out 1.6s;
+    -o-transition: all 0.5s ease-in-out 1.6s;
+    transition: all 0.5s ease-in-out 1.6s;
+}
+ul .li5{
+    -moz-transition: all 0.5s ease-in-out 2s;
+    -webkit-transition: all 0.5s ease-in-out 2s;
+    -o-transition: all 0.5s ease-in-out 2s;
+    transition: all 0.5s ease-in-out 2s;
+}
+#slider3 .btn{
+    -moz-transition: all 0.5s ease-in-out 2s;
+    -webkit-transition: all 0.5s ease-in-out 2s;
+    -o-transition: all 0.5s ease-in-out 2s;
+    transition: all 0.5s ease-in-out 2s;
+}
+.slide-3-p2{
+    -moz-transition: all 0.3s ease-in-out 2.3s;
+    -webkit-transition: all 0.3s ease-in-out 2.3s;
+    -o-transition: all 0.3s ease-in-out 2.3s;
+    transition: all 0.3s ease-in-out 2.3s;
+}
+.slide-3-p3{
+    -moz-transition: all 0.3s ease-in-out 2.6s;
+    -webkit-transition: all 0.3s ease-in-out 2.6s;
+    -o-transition: all 0.3s ease-in-out 2.6s;
+    transition: all 0.3s ease-in-out 2.6s;
+}
+.slide-3-p4{
+    -moz-transition: all 0.3s ease-in-out 3s;
+    -webkit-transition: all 0.3s ease-in-out 3s;
+    -o-transition: all 0.3s ease-in-out 3s;
+    transition: all 0.3s ease-in-out 3s;
+}
+.slide-3-p5{
+    -moz-transition: all 0.3s ease-in-out 3.3s;
+    -webkit-transition: all 0.3s ease-in-out 3.3s;
+    -o-transition: all 0.3s ease-in-out 3.3s;
+    transition: all 0.3s ease-in-out 3.3s;
+}
+.slide-3-p6{
+    -moz-transition: all 0.3s ease-in-out 3.6s;
+    -webkit-transition: all 0.3s ease-in-out 3.6s;
+    -o-transition: all 0.3s ease-in-out 3.6s;
+    transition: all 0.3s ease-in-out 3.6s;
+}
+/*******************各元素变化前的样式********************/
+#slider3 ul li.preTransition3{
+	opacity:0;
+	‐moz‐transform:translate3d(0px, -50px, -50px);
+	‐webkit‐transform:translate3d(0px, -50px, -50px);
+	‐o‐transform:translate3d(0px, -50px, -50px);
+	‐ms‐transform:translate3d(0px, -50px, -50px);
+	transform:translate3d(0px, -50px, -50px);
+}
+.slide-3-p1.preTransition3{
+	opacity:0;
+	‐moz‐transform:translate3d(0px, 150px, 0px);
+	‐webkit‐transform:translate3d(0px, 150px, 0px);
+	‐o‐transform:translate3d(0px, 150px, 0px);
+	‐ms‐transform:translate3d(0px, 150px, 0px);
+	transform:translate3d(0px, 150px, 0px);
+}
+.btn.preTransition3{
+	opacity:0;
+	‐moz‐transform:translate3d(0px, 150px, 0px);
+	‐webkit‐transform:translate3d(0px, 150px, 0px);
+	‐o‐transform:translate3d(0px, 150px, 0px);
+	‐ms‐transform:translate3d(0px, 150px, 0px);
+	transform:translate3d(0px, 150px, 0px);
+}
+.slide-3-p2.preTransition3,.slide-3-p3.preTransition3,.slide-3-p4.preTransition3,.slide-3-p5.preTransition3,.slide-3-p6.preTransition3{
+	opacity:0; 
+}
+

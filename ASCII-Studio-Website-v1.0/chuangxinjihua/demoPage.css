@@ -1,0 +1,157 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;    
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;	
+}
+p{
+	font-size: 2em;
+}
+.section{
+	text-align:center;
+	background-size:cover; 
+}
+
+/* Menu
+ * --------------------------------------- */
+ img#logo{
+ 	position:fixed;
+ 	top:5px;left:200px;
+ 	z-index:250;   
+ }
+ #menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 65px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+	/*background:#4fb6c3;*/
+	background-color:rgba(0,0,0,0.8); 
+}
+#menu li {
+	font-family:"微软雅黑";
+	display:inline-block;
+	height: 60px;
+	line-height:60px;
+	font-size: 20px; 
+	color: #000;
+	margin-left:30px;
+	padding:0 20px 0px 20px; 
+}
+#menu li:nth-child(1){
+	margin-left:250px; 
+}
+#menu li.active{
+	border-bottom: 5px #4fb6c3 solid; 
+}
+#menu li a{
+	text-decoration:none;
+	color: #fff
+}
+#menu li a:hover{color:#4fb6c3;}
+#menu li a,
+#menu li.active a{
+	display:block;
+}
+/* Sections
+ * --------------------------------------- */
+
+#section0,
+ #section1,
+ #section2,
+ #section3,
+ #section4
+ {
+	background-size: cover;
+	padding:0 30px 0 0;
+ }
+ #section0{
+	background-image: url(imgs/InnovateProj_cover.png);
+ }
+ 
+  #section1{
+	background-image: url(imgs/History.png);
+ }
+
+ #section4{
+ 	background-image: url(imgs/ascii_bg.png);
+ }
+ #section2{
+	background-image: url(imgs/Achieve.png);
+
+ }
+ #section3{
+	background-image: url(imgs/Function.png);
+ }
+ #section0 img{
+	bottom:10%;
+	left: 25%;
+	position:absolute;
+}
+#section4 img{
+	bottom:10%;
+	left: 45%;
+	position:absolute;
+}
+
+
