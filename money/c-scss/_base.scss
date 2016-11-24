@@ -1,0 +1,24 @@
+@import "mixin";
+@import "varilable";
+html,body,div,p{
+  padding:0;
+  margin:0;
+}
+html,body{
+  height:100%;
+  width:100%;
+  overflow: hidden;
+}
+body{
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: black;
+  font-family: "Helvetica neue",Helvetica,Tahoma,"PingFang SC","lantinghei sc","Microsoft Yahei", sans-serif;
+}
+
+.none{
+  display: none;
+}
+.hidden{
+  opacity: 0;
+}

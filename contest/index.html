@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>皮影戏</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="menu-mask" id="menu-mask">
+        <img src="./img/close.png" class="close" id="close-menu-bar" alt="">
+        <div class="menu-list" id="menu-list">
+            <img src="./img/history.png" class="menu-item history" data-id="1" alt="">
+            <img src="./img/tool.png" class="menu-item tool" data-id="2" alt="">
+            <img src="./img/act.png" class="menu-item act" data-id="3"  alt="">
+            <img src="./img/news.png" class="menu-item news" data-id="4"  alt="">
+        </div>
+    </div>
+    <header class="header-bar">
+        <div class="menu-wrap">
+            <img src="./img/bar/menu.png" class="menu" id="menu-bar" alt="菜单">
+        </div>
+        <!--<div class="title-wrap">-->
+            <!--<img src="./img/bar/tittle.png" class="menu" alt="标题">-->
+        <!--</div>-->
+        <div class="share-wrap">
+            <img src="./img/bar/share.png" class="menu" alt="分享">
+        </div>
+    </header>
+    <div class="main">
+        <div class="scene scene-1">
+            <img src="./img/logo.png" class="logo" alt="">
+            <img src="./img/bar/mouse.png" class="mouse" id="mouse" alt="">
+            <div class="video-mask">
+                <video autoplay="autoplay" loop="loop" poster="./img/bg.png" id="video">
+                    <source src="./img/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="scene scene-2">
+            <ul class="dot-wrap" id="dot-wrap">
+                <li class="dot active"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+            <div class="item-article item-article-1 active">
+                <div class="article">
+                    <img src="./img/article/history.png" class="history" alt="">
+                    <img src="./img/article/mid-1.png" class="mid" alt="">
+                </div>
+            </div>
+            <div class="item-article item-article-2">
+                <div class="article">
+                    <img src="./img/article/history.png" class="history" alt="">
+                    <img src="./img/article/mid-2.png" class="mid" alt="">
+                </div>
+            </div>
+            <div class="item-article item-article-3">
+                <div class="article">
+                    <img src="./img/article/history.png" class="history" alt="">
+                    <img src="./img/article/mid-3.png" class="mid" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="scene scene-3">
+            <img src="./img/scene3/tool.png" class="title" alt="title">
+            <div class="tool-list">
+                <div class="tool-item-wrap">
+                    <img src="./img/scene3/item-small-1.png" class="tool-item tool-item-1" alt="">
+                    <div class="button-wrap tool-button" data-id="3">
+                        <img src="./img/scene3/detail.png" class="button" alt="">
+                        <img src="./img/scene3/detail-hover.png" class="button-hover" alt="">
+                    </div>
+                </div>
+                <div class="tool-item-wrap">
+                    <img src="./img/scene3/item-small-2.png" class="tool-item tool-item-2" alt="">
+                    <div class="button-wrap tool-button" data-id="2">
+                        <img src="./img/scene3/detail.png" class="button" alt="">
+                        <img src="./img/scene3/detail-hover.png" class="button-hover" alt="">
+                    </div>
+                </div>
+                <div class="tool-item-wrap">
+                    <div class="button-wrap tool-button" data-id="1">
+                        <img src="./img/scene3/detail.png" class="button" alt="">
+                        <img src="./img/scene3/detail-hover.png" class="button-hover" alt="">
+                    </div>
+                    <img src="./img/scene3/item-small-3.png" class="tool-item tool-item-3" alt="">
+                </div>
+            </div>
+
+            <div class="detail-article-wrap detail-article-wrap-1">
+                <img src="./img/scene3/close.png" class="close" alt="">
+                <div class="detail-article-list clearfix">
+                    <img class="detail-article-item" src="./img/scene3/detail-item-1.png" alt="">
+                </div>
+            </div>
+            <div class="detail-article-wrap detail-article-wrap-2">
+                <img src="./img/scene3/close.png" class="close" alt="">
+                <div class="detail-article-list clearfix">
+                    <img class="detail-article-item" src="./img/scene3/detail-item-2.png" alt="">
+                </div>
+            </div>
+            <div class="detail-article-wrap detail-article-wrap-3">
+                <img src="./img/scene3/close.png" class="close" alt="">
+                <img src="./img/scene3/prev.png" class="prev" id="prev-page" alt="">
+                <img src="./img/scene3/next.png" class="next" id="next-page" alt="">
+                <ul class="dot-wrap" id="page-dot">
+                    <li class="dot active" data-id="0"></li>
+                    <li class="dot" data-id="1"></li>
+                    <li class="dot" data-id="2"></li>
+                    <li class="dot" data-id="3"></li>
+                </ul>
+                <div class="detail-article-list clearfix" id="page-list">
+                    <img class="detail-article-item" src="./img/scene3/detail-item-3-1.png" alt="">
+                    <img class="detail-article-item" src="./img/scene3/detail-item-3-2.png" alt="">
+                    <img class="detail-article-item" src="./img/scene3/detail-item-3-3.png" alt="">
+                    <img class="detail-article-item" src="./img/scene3/detail-item-3-4.png" alt="">
+                    <a href="http://www.iqiyi.com/w_19rtdugghl.html" target="_blank">
+                        <img src="./img/scene3/play.png" class="play" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scene scene-4">
+            <img src="./img/scene4/title.png" class="title" alt="title">
+            <div class="mid-wrap active">
+                <img src="./img/scene4/mid-1.png" class="mid" alt="mid">
+            </div>
+            <div class="mid-wrap">
+                <img src="./img/scene4/mid-2.png" class="mid" alt="mid">
+                <div class="button-wrap" onclick="main.showChildPage(2);">
+                    <img src="./img/scene3/detail.png" class="button" alt="">
+                    <img src="./img/scene3/detail-hover.png" class="button-hover" alt="">
+                </div>
+            </div>
+            <ul class="dot-wrap" id="history-dot-wrap">
+                <li class="dot active"></li>
+                <li class="dot"></li>
+            </ul>
+            <div class="play-wrap">
+                <img src="./img/scene4/play.png"  class="play" onclick="main.showChildPage(1);" alt="play">
+            </div>
+        </div>
+        <div class="scene scene-5">
+            <div class="contain-wrap">
+                <div class="news-wrap">
+                    <img src="./img/scene6/title.png" class="title" alt="title">
+                    <div class="news-item-wrap">
+                        <img src="./img/scene6/news2.png" class="news-item" alt="">
+                        <a href="http://www.senlinyanchu.com/" target="_blank">
+                            <div class="button-wrap">
+                                <img src="./img/scene3/detail.png" class="button" alt="">
+                                <img src="./img/scene3/detail-hover.png" class="button-hover" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item-wrap">
+                        <img src="./img/scene6/news1.png" class="news-item" alt="">
+                        <a href="http://zhongchou.modian.com/item/475.html?s=22" target="_blank">
+                            <div class="button-wrap">
+                                <img src="./img/scene3/detail.png" class="button" alt="">
+                                <img src="./img/scene3/detail-hover.png" class="button-hover" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="word-wrap">
+                    <img src="./img/scene6/word.png"  class="word" alt="">
+                    <a href="javascript:void(0);" target="_blank">
+                        <div class="button-wrap" onclick="main.showChildPage(3)">
+                            <img src="./img/scene6/btn.png" class="button" alt="">
+                            <img src="./img/scene6/btn-hover.png" class="button-hover" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <img src="./img/top.png" class="top" onclick="main.changeScroll(0);" alt="">
+        </div>
+    </div>
+
+    <div class="mask-scene scene-1" id="scene-1">
+        <img src="./img/close.png" class="close" alt="">
+        <div class="video-wrap">
+            <img src="./img/scene5/title.png" class="title" alt="title">
+            <div class="video-list">
+                <a href="http://www.chuiyue.com/ys/25130/player-0-447.html" class="first-item" target="_blank">
+                    <div class="video-item">
+                        <img src="./img/scene5/1.png" class="item-img" alt="">
+                        <div class="item-mask">
+                            <img src="./img/scene4/play.png" class="play" alt="">
+                            <p>回古城</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="http://www.chuiyue.com/ys/25130/player-0-367.html" target="_blank">
+                    <div class="video-item first-item">
+                        <img src="./img/scene5/2.png" class="item-img" alt="">
+                        <div class="item-mask">
+                            <img src="./img/scene4/play.png" class="play" alt="">
+                            <p>五峰会</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="http://www.chuiyue.com/ys/25130/player-0-282.html" target="_blank">
+                    <div class="video-item first-item">
+                        <img src="./img/scene5/3.png" class="item-img" alt="">
+                        <div class="item-mask">
+                            <img src="./img/scene4/play.png" class="play" alt="">
+                            <p>青龙剑</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://www.chuiyue.com/ys/25130/player-0-227.html" class="first-item" target="_blank">
+                    <div class="video-item">
+                        <img src="./img/scene5/1.png" class="item-img" alt="">
+                        <div class="item-mask">
+                            <img src="./img/scene4/play.png" class="play" alt="">
+                            <p>二度梅</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="http://www.chuiyue.com/ys/25130/player-0-96.html" target="_blank">
+                    <div class="video-item first-item">
+                        <img src="./img/scene5/2.png" class="item-img" alt="">
+                        <div class="item-mask">
+                            <img src="./img/scene4/play.png" class="play" alt="">
+                            <p>封神榜</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="http://v.youku.com/v_show/id_XNzYxNjUxNjQw.html" target="_blank">
+                    <div class="video-item first-item">
+                        <img src="./img/scene5/3.png" class="item-img" alt="">
+                        <div class="item-mask">
+                            <img src="./img/scene4/play.png" class="play" alt="">
+                            <p>白蛇传</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://v.youku.com/v_show/id_XNzM2Mzg2MDY4.html?amp%3Bpage=videoMultiNeed" class="first-item" target="_blank">
+                    <div class="video-item">
+                        <img src="./img/scene5/3.png" class="item-img" alt="">
+                        <div class="item-mask">
+                            <img src="./img/scene4/play.png" class="play" alt="">
+                            <p>西游记</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="http://v.youku.com/v_show/id_XMjA4Mjk4NA==.html" target="_blank">
+                    <div class="video-item first-item">
+                        <img src="./img/scene5/8.png" class="item-img" alt="">
+                        <div class="item-mask">
+                            <img src="./img/scene4/play.png" class="play" alt="">
+                            <p>龟与鹤</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="http://www.iqiyi.com/w_19rs3foa3h.html" target="_blank">
+                    <div class="video-item first-item">
+                        <img src="./img/scene5/9.png" class="item-img" alt="">
+                        <div class="item-mask">
+                            <img src="./img/scene4/play.png" class="play" alt="">
+                            <p>岳飞传</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mask-scene scene-2" id="scene-2">
+        <img src="./img/close.png" class="close" alt="">
+        <div class="act-wrap">
+            <img src="./img/scene7/title.png" class="title" alt="">
+            <div class="act-list" id="act-list">
+                <div class="act-item-wrap active">冀南皮影</div>
+                <div class="act-item-wrap">浙江皮影</div>
+                <div class="act-item-wrap">广东皮影</div>
+                <div class="act-item-wrap">湖北皮影</div>
+                <div class="act-item-wrap">泰山皮影</div>
+                <div class="act-item-wrap">陇东皮影</div>
+                <div class="act-item-wrap">陕西皮影</div>
+                <div class="act-item-wrap">山西皮影</div>
+                <div class="act-item-wrap">京西皮影</div>
+            </div>
+            <div class="intro">
+                <img src="./img/scene7/1.png" id="act-img" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="mask-scene scene-3" id="scene-3">
+        <div class="act-wrap">
+            <img src="./img/scene3/close.png" class="close" alt="">
+            <div class="form-wrap">
+                <div class="input-wrap">
+                    <label for="name">昵称:</label>
+                    <input type="text" id="name" placeholder="输入你的名称">
+                </div>
+                <div class="input-wrap">
+                    <label for="content">内容:</label>
+                    <textarea name="content" id="content"></textarea>
+                </div>
+                <div class="btn-wrap">
+                    <div class="button-wrap submit">
+                        <img src="./img/scene6/sub-btn.png" class="button" alt="">
+                        <img src="./img/scene6/sub-btn-hover.png" class="button-hover" alt="">
+                    </div>
+                    <div class="button-wrap cancel">
+                        <img src="./img/scene6/cancel-btn.png" class="button" alt="">
+                        <img src="./img/scene6/cancel-btn-hover.png" class="button-hover" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.mousewheel.min.js"></script>
+    <script src="./js/Tween.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

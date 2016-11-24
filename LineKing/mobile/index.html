@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+	<!--上面的代码依次表示设置宽度为设备的宽度，默认不缩放，不允许用户缩放（即禁止缩放），在网页加载时隐藏地址栏与导航栏 -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection"content="telephone=no, email=no" />
+	<meta name="browsermode" content="application">
+	<link rel="stylesheet" href="css/ratchet.css">
+	<title>片刻</title>
+</head>
+<body>
+	<header class="bar bar-nav">
+		<h1 class="title">Today</h1>	
+	</header>
+	<nav class="bar bar-tab">
+	  <a class="tab-item active" href="#">
+	    <span class="icon icon-home"></span>
+	    <span class="tab-label">Today</span>
+	  </a>
+	  <a class="tab-item" href="#">
+	    <span class="icon icon-pages"></span>
+	    <span class="tab-label">Word</span>
+	  </a>
+	  <a class="tab-item" href="#">
+	    <span class="icon icon-star-filled"></span>
+	    <span class="tab-label">Images</span>
+	  </a>
+	  <a class="tab-item" href="#">
+	    <span class="icon icon-search"></span>
+	    <span class="tab-label">More</span>
+	  </a>
+	  <a class="tab-item" href="#">
+	    <span class="icon icon-person"></span>
+	    <span class="tab-label">Person</span>
+	  </a>
+	</nav>
+	<div class="content">
+		<div class="toggle active">
+			<div class="toggle-handle"></div>
+		</div>
+		<div class="toggle">
+			<div class="toggle-handle"></div>
+		</div>
+	</div>
+	
+</body>
+<script src="js/toggles.js"></script>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户中心</title>
+	<link rel="stylesheet" href="base/normalize.css">
+	<link rel="stylesheet" href="base/anim.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+	<div class="nav">
+		<div class="main-wrapper">
+			<div class="logo">
+				<img src="images/you.jpg" alt="">
+			</div>
+			<div class="menu">
+					<a class="menuChild" href="#">精品</a>
+					<a class="menuChild" href="#">热门</a>
+					<a class="menuChild" href="#">发起队列</a>
+					<a class="menuChild" href="#">反馈</a>
+					<a class="menuChild" href="#">关于我们</a>	
+			</div>
+			<div class="usercenter">
+				<div class="avatar">
+					<img src="images/you.jpg" alt="用户头像">
+				</div>
+				<div class="p"><span>账号<i class="fa fa-chevron-up"></i></span>
+					<ul>
+						<li>用户设置</li>
+						<li>个人中心</li>
+						<li>退出登陆</li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="main-wrapper">
+		<div class="user-setting">
+			<header>
+				<span>用户设置</span>
+				<a href="user-center.html"><span>个人中心</span></a>
+			</header>
+			<table>
+				<tr>
+					<td>昵称：</td>
+					<td><input type="text" value="明明三省"></td>
+					<td><a href="#" id="altername">修改</a></td>
+				</tr>
+				<tr>
+					<td>头像：</td>
+					<td><img src="images/you.jpg" alt="" style="width:40px;height:40px;"></td>
+					<td><a href="#" id="alteravatar">修改</a></td>
+				</tr>
+				<tr>
+					<td>邮箱：</td>
+					<td colspan=2>1769111903@qq.com</td>
+				</tr>
+				<tr>
+					<td>密码：</td>
+					<td ><input type="password" disabled value="fngvjkdsfnjg"></td>
+					<td><a href="#" id="alterpass">修改</a></td>
+				</tr>
+				<tr>
+					<td>一句话简介：</td>
+					<td><input type="text" class="table" placeholder="记住一个人、只需一句话"></td>
+					<td><a href="#">修改</a></td>
+				</tr>
+				<tr>
+					<td>详细介绍：</td>
+					<td><textarea placeholder="让我们知道你是有性格的人吧。。。" cols="50" rows="6"></textarea></td>
+					<td><a href="#">保存</a></td>
+				</tr>
+			</table>			 
+		</div>
+	</div>
+	<div class="avatarmask" id="avatarmask">
+		<div class="avatarwindow animated tada" id="avatarwindow">
+			<i class="fa fa-2x fa-remove avatarclose"></i>
+			<header>修改头像</header>
+			<span class="header">做一个有头有脸的人。。</span>
+			<div class="file">
+				<input type="file">  <span>预览</span>
+			</div>
+			<div class="img-wrapper">
+				<div class="img img1">
+					<img src="images/you.jpg" alt="" style="height:100px;width:100px">
+					<p>100X100</p>
+				</div>
+				<div class="img img2">
+					<img src="images/you.jpg" alt="" style="height:60px;width:60px">
+					<p>60X60</p>
+				</div>
+				<div class="img img3">
+					<img src="images/you.jpg" alt="" style="height:40px;width:40px">
+					<p>40X40</p>
+				</div>
+			</div>
+			
+			<button>保存头像</button>
+		</div>
+	</div>
+	<div class="passwordmask" id="passwordmask">
+		<div class="passwordwindow animated tada" id="passwordwindow">
+			<i class="fa fa-2x fa-remove passclose"></i>
+			<header>修改密码</header>
+			<input type="text" class="oldpass" placeholder="请输入原密码，证明你是你">
+			<input type="text" class="newpass1" placeholder="输入新密码">
+			<input type="text" class="newpass2" placeholder="核对新密码">
+			<button>保存</button>
+		</div>
+	</div>
+	
+</body>
+<script type="text/javascript" src="js/jquery-1.js"></script>
+<script type="text/javascript" src="js/jquery-2.js"></script>
+<script type="text/javascript" src="js/user.js"></script>
+</html>

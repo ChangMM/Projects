@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>小暖智能诊所</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1,minimum-scale=1,initial-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./c-img/icon/icon_57X57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./c-img/icon/icon_72X72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./c-img/icon/icon_114X114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./c-img/icon/icon_144X144.png" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" href="./css/c-index.css"/>
+    <link rel="stylesheet" href="./css/c-bottom.css"/>
+</head>
+<body>
+<div class="mask" id="mask">
+    <img src="./c-img/start-cat.png" class="start-cat" id="start-cat" alt="">
+    <div class="welcome-word" id="welcome-word">
+        <p class="word" id="word">Believe In Yourself</p>
+        <img src="./c-img/logo-start.png" class="logo" id="logo" alt=""/>
+    </div>
+</div>
+
+ <div class="main">
+     <img src="./c-img/logo.png" class="header-logo" alt="顶部logo"/>
+
+     <div class="left-main" id="left-main">
+         <div class="main-content" id="dog-main-wrap">
+             <img src="./c-img/left-main/left-circle-3.png" class="circle circle-3" alt="circle"/>
+             <img src="./c-img/left-main/left-circle-1.png" class="circle circle-1" alt="circle"/>
+             <img src="./c-img/left-main/left-circle-2.png" class="circle circle-2" alt="circle"/>
+             <img src="./c-img/left-main/animal.png" class="animal" alt="动物"/>
+
+             <div class="time-wrap">
+                 <img src="./img/time.png" class="time-img" alt=""/>
+                 <span class="time-span" id="time-span">7.5</span>
+             </div>
+
+             <!-- 小猫的检查项的信息 -->
+             <div class="check-list-wrap active">
+
+                 <!-- 第一项体格检查 -->
+                 <div class="check-item check-item-1" id="check-item-1">
+                     <img src="c-img/check/frame1.png" class="frame frame-1" alt=""/>
+                     <img src="./c-img/check/line1.png" class="line line-1" alt=""/>
+                     <img src="./c-img/check/dot.png" class="dot dot-1" alt=""/>
+                 </div>
+
+                <!-- 血常规检查 -->
+                 <div class="check-item check-item-2" id="check-item-2">
+                     <img src="./c-img/check/frame2.png" class="frame frame-2" alt=""/>
+                     <img src="./c-img/check/line2.png" class="line line-2" alt=""/>
+                     <img src="./c-img/check/dot.png" class="dot dot-2" alt=""/>
+                 </div>
+
+                 <!-- 粪便检验 -->
+                 <div class="check-item check-item-3" id="check-item-3">
+                     <img src="./c-img/check/frame3.png" class="frame frame-3" alt=""/>
+                     <img src="./c-img/check/line3.png" class="line line-3" alt=""/>
+                     <img src="./c-img/check/dot.png" class="dot dot-3" alt=""/>
+                 </div>
+
+                 <!-- 生化检查 -->
+                 <div class="check-item check-item-4" id="check-item-4">
+                     <img src="./c-img/check/frame4.png" class="frame frame-4" alt=""/>
+                     <img src="./c-img/check/line4.png" class="line line-4" alt=""/>
+                     <img src="./c-img/check/dot.png" class="dot dot-4" alt=""/>
+                 </div>
+
+                 <!-- 腹部B超 -->
+                 <div class="check-item check-item-5" id="check-item-5">
+                     <img src="./c-img/check/frame5.png" class="frame frame-5" alt=""/>
+                     <img src="./c-img/check/line5.png" class="line line-5" alt=""/>
+                     <img src="./c-img/check/dot.png" class="dot dot-5" alt=""/>
+                 </div>
+
+                 <!-- 腹部X光检查 -->
+                 <div class="check-item check-item-6" id="check-item-6">
+                     <img src="c-img/check/frame6.png" class="frame frame-6" alt=""/>
+                     <img src="./c-img/check/line6.png" class="line line-6" alt=""/>
+                     <img src="./c-img/check/dot.png" class="dot dot-6" alt=""/>
+                 </div>
+
+             </div>
+         </div>
+        <!-- 第一个场景基本信息的按钮 -->
+         <div class="button-1-wrap button-wrap" id="js-profile">
+             <img src="./c-img/left-main/left-hand.png" class="left-hand" alt="button"/>
+             <img src="./c-img/left-main/button-circle.png" class="button-circle" alt="button"/>
+             <img src="./c-img/left-main/button-circle-active.png" class="button-circle button-circle-active" alt="button"/>
+             <img src="./c-img/left-main/dot.png" class="dot" alt="button"/>
+             <img src="./c-img/left-main/button-1.png" class="button-1" alt="button"/>
+             <img src="./c-img/left-main/button-1-active.png" class="button-1 button button-1-active" alt="button"/>
+         </div>
+
+         <div class="panel-detail-wrap dog-info-panel" id="dog-info">
+             <img src="./c-img/panel/cross.png" class="cross" id="dog-info-cross" alt="关闭按钮"/>
+             <p class="header">基本信息</p>
+             <div class="panel-detail">
+                 <div class="panel-content">
+                     <img src="./c-img/avatar.png" class="avatar" alt="头像">
+                     <p>动物名字：球球</p>
+                     <p>年龄：5岁</p>
+                     <p>品种：虎斑猫</p>
+                     <p>体重：3.5kg</p>
+                     <p>性别：雌性/已绝育</p>
+                     <p>其他：已免疫，已驱虫</p>
+                 </div>
+             </div>
+         </div>
+
+         <!-- 症状信息的按钮 -->
+         <div class="button-2-wrap button-wrap"  id=js-illinfo>
+             <img src="./c-img/left-main/right-hand.png" class="right-hand" alt="button"/>
+             <img src="./c-img/left-main/button-circle.png" class="button-circle" alt="button"/>
+             <img src="./c-img/left-main/button-circle-active.png" class="button-circle button-circle-active" alt="button"/>
+             <img src="./c-img/left-main/dot.png" class="dot" alt="button"/>
+             <img src="./c-img/left-main/button-2.png" class="button-2" alt="button"/>
+             <img src="./c-img/left-main/button-2-active.png" class="button-2 button button-2-active" alt="button"/>
+         </div>
+     </div>
+
+     <div class="right-main">
+         <!-- 第一个场景右边部分 -->
+        <div id="js-item-1" class="right-main-item show side-menu-wrap">
+            <div class="side-menu-item side-menu-item-1" id=js-checkinfo>
+                <img src="./c-img/side_menu/sidemenu_circle_2.png" class="side-menu-circle-2" alt="sidemenu_circle_2"/>
+                <img src="./c-img/side_menu/sidemenu_circle_2_active.png" class="side-menu-circle-2 side-menu-circle-2-active" alt="sidemenu_circle_2"/>
+                <img src="./c-img/side_menu/sidemenu_circle_1.png" class="side-menu-circle-1" alt="sidemenu_circle_1"/>
+                <img src="./c-img/side_menu/sidemenu_1.png" class="side-menu-1" alt="sidemenu_2"/>
+            </div>
+
+            <div class="side-menu-item side-menu-item-2" id=js-plan>
+                <img src="./c-img/side_menu/sidemenu_circle_2.png" class="side-menu-circle-2" alt="sidemenu_circle_2"/>
+                <img src="./c-img/side_menu/sidemenu_circle_2_active.png" class="side-menu-circle-2 side-menu-circle-2-active" alt="sidemenu_circle_2"/>
+                <img src="./c-img/side_menu/sidemenu_circle_1.png" class="side-menu-circle-1" alt="sidemenu_circle_1"/>
+                <img src="./c-img/side_menu/sidemenu_2.png" class="side-menu-1" alt="sidemenu_2"/>
+            </div>
+
+            <div class="side-menu-item side-menu-item-3" id=js-treatment>
+                <img src="./c-img/side_menu/sidemenu_circle_2.png" class="side-menu-circle-2" alt="sidemenu_circle_2"/>
+                <img src="./c-img/side_menu/sidemenu_circle_2_active.png" class="side-menu-circle-2 side-menu-circle-2-active" alt="sidemenu_circle_2"/>
+                <img src="./c-img/side_menu/sidemenu_circle_1.png" class="side-menu-circle-1" alt="sidemenu_circle_1"/>
+                <img src="./c-img/side_menu/sidemenu_3.png" class="side-menu-1" alt="sidemenu_2"/>
+            </div>
+        </div>
+
+         <!-- 第二个场景右边部分 -->
+         <div id="js-item-2" class="right-main-item right-panel hide">
+             <div class="panel-item panel-item-1">
+                 <div class="panel-header">
+                     <span>推荐问题</span>
+                 </div>
+                 <div class="panel-bottom"></div>
+                 <div class="panel-left"></div>
+                 <div class="panel-right"></div>
+                 <div class="panel-content-wrap">
+                     <div class="panel-content">
+                         <p class="text-item" id=js-question>
+                            1.球球哪里不舒服了？
+                         </p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="panel-item volume-panel-item panel-item-2">
+                 <div class="panel-header">
+                     <span>症状描述</span>
+                 </div>
+                 <div class="panel-bottom"></div>
+                 <div class="panel-left"></div>
+                 <div class="panel-right"></div>
+                 <div class="panel-content-wrap">
+                     <div class="panel-content" id=itemContainer>
+                         <p class="text-item none">
+                         </p>
+                         <p class="text-item none">
+                         </p>
+                         <p class="text-item none">
+                         </p>
+                         <p class="text-item none">
+                         </p>
+                         <p class="text-item">
+                         </p>
+                     </div>
+                 </div>
+                 <div class="volume-wrap" id=js-volume data-clicktime=0>
+                     <img src="./c-img/volume/volume-circle.png" class="volume-circle" alt=""/>
+                     <img src="./c-img/volume/volume.gif" class="volume volume-gif" alt=""/>
+                     <img src="./c-img/volume/volume.png" class="volume volume-png" alt=""/>
+                 </div>
+             </div>
+         </div>
+
+         <!--第三个场景右边部分 -->
+         <div class="right-main-item right-panel hide" id="js-item-3">
+             <div class="panel-item volume-panel-item check-panel-item panel-item-3">
+                 <div class="panel-header">
+                     <span>检查项</span>
+                 </div>
+                 <div class="panel-bottom"></div>
+                 <div class="panel-left"></div>
+                 <div class="panel-right"></div>
+                 <div class="panel-content-wrap">
+                     <div class="panel-content"  id=scrollContainer-3>
+                         <p class="text-item js-active">
+                             1. 体格检查
+                         </p>
+                         <p class="text-item js-active">
+                             2. 血常规检查
+                         </p>
+                         <p class="text-item js-active">
+                             3. 分辨检验
+                         </p>
+                         <p class="text-item js-active">
+                             4. 生化检查
+                         </p>
+                         <p class="text-item js-active">
+                             5. 腹部B超
+                         </p>
+                         <p class="text-item js-active none">
+                             6. 腹部X光检查
+                         </p>
+                     </div>
+                 </div>
+                 <div class="volume-wrap" id="js-volume-2"  data-clicktime=0>
+                     <img src="./c-img/volume/volume-circle.png" class="volume-circle" alt=""/>
+                     <img src="./c-img/volume/volume.gif" class="volume volume-gif" alt=""/>
+                     <img src="./c-img/volume/volume.png" class="volume volume-png" alt=""/>
+                 </div>
+             </div>
+             <p class="intro">疑似病症推荐检查方案组合：</p>
+         </div>
+
+         <!-- 第四个场景右边部分 -->
+         <div class="right-main-item right-panel hide" id="js-item-4">
+             <div class="panel-item panel-item-4">
+                 <div class="panel-header">
+                     <span>检查结果</span>
+                 </div>
+                 <div class="panel-bottom"></div>
+                 <div class="panel-left"></div>
+                 <div class="panel-right"></div>
+                 <div class="panel-content-wrap">
+                     <div class="panel-content">
+                     	<p class="text-item js-show" data-id=1>
+                             1. 体格检查
+                         </p>
+                         <p class="text-item js-show" data-id=2>
+                             2. 血常规检查
+                         </p>
+                         <p class="text-item js-show" data-id=3>
+                             3. 粪便检验
+                         </p>
+                         <p class="text-item error js-show" data-id=4>
+                             4. 生化检查
+                         </p>
+                         <p class="text-item error js-show" data-id=5>
+                             5. 腹部B超
+                         </p>
+                         <p class="text-item error js-show" data-id=6>
+                             6. 腹部X光检查
+                         </p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="panel-detail-wrap result-info-panel" id="result-info-1">
+                 <img src="./c-img/panel/cross.png" class="cross result-cross" id="result-cross-1" alt="关闭按钮"/>
+                 <p class="header">体格检查</p>
+                 <div class="panel-detail">
+                     <div class="panel-content">
+                         <table>
+                             <tr><td>检查项目</td><td>结果</td></tr>
+                             <tr><td>体温/℃</td><td>39.8</td></tr>
+                             <tr><td>呼吸次/分</td><td>36</td></tr>
+                             <tr><td>心率</td><td>198</td></tr>
+                             <tr><td>脉搏</td><td>190</td></tr>
+                             <tr><td>心脏听诊</td><td>未见异常</td></tr>
+                             <tr><td>肺部听诊</td><td>未见异常</td></tr>
+                             <tr><td>BCS体况评分</td><td>2/5</td></tr>
+                             <tr><td>CRT /S</td><td> <<2s </td></tr>
+                             <tr><td>粘膜颜色</td><td>淡粉色</td></tr>
+                             <tr><td>体表淋巴结</td><td>腹股沟淋巴结稍微增大</td></tr>
+                             <tr><td>皮肤/被毛</td><td>皮肤无明显异常，毛色不光亮，有脱毛现象</td></tr>
+                             <tr><td>眼睛</td><td>正常</td></tr>
+                             <tr><td>耳朵</td><td>正常,有脱毛</td></tr>
+                             <tr><td>鼻子/喉部</td><td>鼻周围湿润，喉部红肿</td></tr>
+                             <tr><td>牙齿/口腔</td><td>有口臭</td></tr>
+                             <tr><td>腹部</td><td>腹部鼓胀，体温升高</td></tr>
+                             <tr><td>泌尿生殖系统</td><td>未见异常</td></tr>
+                             <tr><td>瘙痒评分</td><td>0</td></tr>
+                         </table>
+                         <p>检验医师：王晓楠  送检医师：李师师</p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="panel-detail-wrap result-info-panel" id="result-info-2">
+                 <img src="./c-img/panel/cross.png" class="cross result-cross" id="result-cross-2" alt="关闭按钮"/>
+                 <p class="header">血常规检查</p>
+                 <div class="panel-detail">
+                     <div class="panel-content">
+                         <table>
+                             <tr><td>检查项目</td><td>结果</td><td>参考范围</td></tr>
+                             <tr><td>RBC(X10<sup>12</sup>/L)</td><td>6.9</td><td>5.0-10.0</td></tr>
+                             <tr><td>HCT(%)</td><td>39.3</td><td>20-55</td></tr>
+                             <tr><td>HGB(g/L)</td><td>126</td><td>120-180</td></tr>
+                             <tr><td>MCV(X10<sup>-15</sup>/L)</td><td>79.6</td><td>60-77</td></tr>
+                             <tr><td>MCH(X10<sup>-12</sup>/L)</td><td>25.49</td><td>18.5-30</td></tr>
+                             <tr><td>MCHC(g/dL)</td><td>32</td><td>30-37.5</td></tr>
+                             <tr><td>红细胞形态：偶见有核红细胞</td></tr>
+                             <tr><td>WBC(X10<sup>9</sup>/L)</td><td>13.57</td><td>5.5-16.9</td></tr>
+                             <tr><td>Neu(X10<sup>9</sup>/L)</td><td>11.01</td><td>2.0-12.0</td></tr>
+                             <tr><td>Mon(X10<sup>9</sup>/L)</td><td>1.26</td><td>0.3-2.0</td></tr>
+                             <tr><td>Lvm(X10<sup>9</sup>/L)</td><td>0.99</td><td>0.5-4.9</td></tr>
+                             <tr><td>Baso(X10<sup>9</sup>/L)</td><td>0.08</td><td>0-0.10</td></tr>
+                             <tr><td>Eos(X10<sup>9</sup>/L)</td><td>0.23</td><td>0.1-1.49</td></tr>
+                             <tr><td>白细胞形态：未见明显异常</td></tr>
+                             <tr><td>PLT(X10<sup>9</sup>/L)</td><td>269</td><td>175-500</td></tr>
+
+                         </table>
+                         <p>检验医师：王晓楠  送检医师：李师师</p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="panel-detail-wrap result-info-panel" id="result-info-3">
+                 <img src="./c-img/panel/cross.png" class="cross result-cross" id="result-cross-3" alt="关闭按钮"/>
+                 <p class="header">粪便检验</p>
+                 <div class="panel-detail">
+                     <div class="panel-content">
+                         <p>患粪便常规检查，检验粪便中无寄生虫卵等</p>
+                         <img src="./c-img/shi.png" alt=""/>
+                         <p>检验医师：陈思思  送检医师：李师师</p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="panel-detail-wrap result-info-panel" id="result-info-4">
+                 <img src="./c-img/panel/cross.png" class="cross result-cross" id="result-cross-4" alt="关闭按钮"/>
+                 <p class="header">生化检查</p>
+                 <div class="panel-detail">
+                     <div class="panel-content">
+                         <table>
+                             <tr><td>检查项目</td><td>结果</td><td>参考范围</td></tr>
+                             <tr><td>TBIL(μmol/L)</td><td>2</td><td>0-15</td></tr>
+                             <tr><td>ALT(U/L)</td><td>116</td><td>10-100</td></tr>
+                             <tr><td>TP(g/L)</td><td>52</td><td>52-82</td></tr>
+                             <tr><td>ALB(g/L)</td><td>23</td><td>23-40</td></tr>
+                             <tr><td>GLOB(g/L)</td><td>29</td><td>25-45</td></tr>
+                             <tr><td>ALP(U/L)</td><td><span class="red">456</span></td><td>23-212</td></tr>
+                             <tr><td>UREA(mmol/L)</td><td><span class="red">15.5</span></td><td>2.5-9.6</td></tr>
+                             <tr><td>CREA(mmol/L)</td><td>82</td><td>44-159</td></tr>
+                             <tr><td>GLU(mmol/L)</td><td>5.92</td><td>4.11-7.94</td></tr>
+                             <tr><td>CHO(mmol/L)</td><td><span class="red">11.0</span></td><td>2.84-8.27</td></tr>
+                             <tr><td>Ca(mmol/L)</td><td>2.31</td><td>1.98-3.00</td></tr>
+                             <tr><td>P(mmol/L)</td><td>1.29</td><td>0.81-2.19</td></tr>
+                             <tr><td>AMY(U/L)</td><td>514</td><td>500-1500</td></tr>
+                             <tr><td>K(mmol/L)</td><td>4.3</td><td>3.5-6.8</td></tr>
+                             <tr><td>Ca(mmol/L)</td><td>157</td><td>144-160</td></tr>
+                             <tr><td>Cl(mmol/L)</td><td>122</td><td>109-122</td></tr>
+                         </table>
+                         <p>检验医师：陈圆圆  送检医师：李师师</p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="panel-detail-wrap result-info-panel" id="result-info-5">
+                 <img src="./c-img/panel/cross.png" class="cross result-cross" id="result-cross-5" alt="关闭按钮"/>
+                 <p class="header">腹部B超</p>
+                 <div class="panel-detail">
+                     <div class="panel-content">
+                         <p>B超见腹部肿胀</p>
+                         <img src="./c-img/B.jpg" alt=""/>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="panel-detail-wrap result-info-panel" id="result-info-6">
+                 <img src="./c-img/panel/cross.png" class="cross result-cross" id="result-cross-6" alt="关闭按钮"/>
+                 <p class="header">腹部X光检查</p>
+                 <div class="panel-detail">
+                     <div class="panel-content">
+                         <img src="./c-img/x-1.png" alt=""/>
+                         <img src="./c-img/x-2.png" alt=""/>
+                     </div>
+                 </div>
+             </div>
+
+             <p class="intro">疑似病症：</p>
+         </div>
+
+         <!-- 第五个场景右边部分 -->
+         <div class="right-main-item right-panel hide" id="js-item-5">
+             <div class="panel-item panel-item-1 volume-panel-item">
+                 <div class="panel-header">
+                     <span>医嘱</span>
+                 </div>
+                 <div class="panel-bottom"></div>
+                 <div class="panel-left"></div>
+                 <div class="panel-right"></div>
+                 <div class="panel-content-wrap">
+                     <div class="panel-content" id="treatmentContainer">
+                         <p class="text-item">
+                             1.按时、按量服用药物,少食多餐,定期复查,鼓励食用含不饱和脂肪酸的食物或营养补充剂
+                         </p>
+                          <p class="text-item none">
+                             2.加强护理，让猫猫保持安静，避免过度兴奋或运动，给予营养丰富、维生素含量高的食物。
+                         </p>
+                          <p class="text-item none">
+                             3.加强护理，让猫猫保持安静，避免过度兴奋或运动，给予营养丰富、维生素含量高的食物。
+                         </p>
+                     </div>
+                 </div>
+                 <div class="volume-wrap" id="js-volume-5">
+                     <img src="./c-img/volume/volume-circle.png" class="volume-circle" alt=""/>
+                     <img src="./c-img/volume/volume.gif" class="volume volume-gif" alt=""/>
+                     <img src="./c-img/volume/volume.png" class="volume volume-png" alt=""/>
+                 </div>
+             </div>
+             <div class="panel-item volume-panel-item check-panel-item panel-item-2">
+                 <div class="panel-header">
+                     <span>处方</span>
+                 </div>
+                 <div class="panel-bottom"></div>
+                 <div class="panel-left"></div>
+                 <div class="panel-right"></div>
+                 <div class="panel-content-wrap">
+                     <div class="panel-content" id=scrollContainer-5>
+                         <p class="text-item js-active">
+                             1.本病的治疗原则是除因、消炎、止泻、补液，并应根据病因不同，采取相应的治疗措施：过食引起的胃肠炎，应停喂一天，保证充足的饮水.
+                         </p>
+                         <p class="text-item js-active">
+                             2.治疗期间应配合良好的护理工作，如供给少量味美、易消化的流质食物。
+                         </p>
+                         <p class="text-item js-active">
+                             3.本病的治疗原则是除因、消炎、止泻、补液，并应根据病因不同，采取相应的治疗措施：过食引起的胃肠炎，应停喂一天，保证充足的饮水，
+                         </p>
+                         <p class="text-item js-active">
+                             4.治疗期间应配合良好的护理工作，如供给少量味美、易消化的流质食物。
+                         </p>
+                     </div>
+                 </div>
+                 <div class="submit-wrap active">
+                     <img src="./c-img/volume/volume-circle.png" class="volume-circle" alt=""/>
+                     <img src="./c-img/volume/submit.png" class="submit" alt=""/>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <div class="bottom-main">
+         <p class="button" id=js-return>&lt; 返回</p>
+         <div id='js-percent'>
+             <div class="canvas-wrap"><img src="img/bottom/circle.png"><div id="illness1"></div></div>
+             <div class="canvas-wrap"><img src="img/bottom/circle.png"><div id="illness2"></div></div>
+             <div class="canvas-wrap"><img src="img/bottom/circle.png"><div id="illness3"></div></div>
+             <div class="canvas-wrap"><img src="img/bottom/circle.png"><div id="illness4"></div></div>
+             <div class="canvas-wrap"><img src="img/bottom/circle.png"><div id="illness5"></div></div>
+             <div class="canvas-wrap"><img src="img/bottom/circle.png"><div id="illness6" class="volume-panel-item">
+                 <div class="volume-wrap none" id=js-volume-7>
+                     <img src="./img/volume/volume-circle.png" class="volume-circle" alt=""/>
+                     <img src="./img/volume/volume.gif" class="volume volume-gif" alt=""/>
+                     <img src="./img/volume/volume.png" class="volume volume-png" alt=""/>
+                 </div>
+             </div></div>
+         </div>
+
+         <div id='js-percent-2' class="none">
+             <p class="js-percent-span">根据全国医生使用频率统计:</p>
+             <div class="canvas-wrap"><img src="img/bottom/circle.png"><div id=t1></div></div>
+             <div class="canvas-wrap"><img src="img/bottom/circle.png"><div id=t2></div></div>
+             <div class="canvas-wrap"><img src="img/bottom/circle.png"><div id=t3></div></div>
+             <div class="canvas-wrap"><img src="img/bottom/circle.png"><div id=t4></div></div>
+             <div class="canvas-wrap"><img src="img/bottom/circle.png"><div ></div></div>
+             <div class="canvas-wrap"><img src="img/bottom/circle.png"><div ></div></div>
+         </div>
+         <p class="button" id=js-next>进入检查&gt;</p>
+     </div>
+ </div>
+
+ <div class="panel-detail-wrap tip-panel" id="tip-panel">
+     <img src="./c-img/panel/cross.png" class="cross tip-cross" id="tip-cross" alt="关闭按钮"/>
+     <p class="header">提醒</p>
+     <div class="panel-detail">
+         <div class="panel-content">
+             <div class="volume-wrap">
+                <img src="./c-img/volume/volume-circle.png" class="volume-circle" alt=""/>
+                <img src="./c-img/volume/volume.png" class="volume" alt=""/>
+             </div>
+             <p class="mask-word" id="tip-word">这是一些提示的话</p>
+         </div>
+     </div>
+ </div>
+
+<div class="panel-detail-wrap check-panel" id="check-panel">
+     <img src="./c-img/panel/cross.png" class="cross tip-cross" id="check-cross" alt="关闭按钮"/>
+     <p class="header">正在检查</p>
+     <div class="panel-detail">
+         <div class="panel-content">
+             <img src="./c-img/loading/micro.png" class="micro" alt="micro"/>
+             <img src="./c-img/loading/loading.gif" class="loading-gif" alt="loading-gif"/>
+
+             <p><span>检查中...</span> <span id="check-percent" class="check-percent">0</span>%</p>
+             <div class="loading">
+                 <img src="./c-img/loading/loading-wrap.png" class="loading-wrap" alt="loading-wrap"/>
+                 <img src="./c-img/loading/loading-bar.png" class="loading-bar" id="loading-bar" alt="loading-bar"/>
+             </div>
+         </div>
+     </div>
+ </div>
+
+<div class="panel-detail-wrap result-panel" id="result-panel">
+     <img src="./c-img/panel/cross.png" class="cross tip-cross" id="conclude-cross" alt="关闭按钮"/>
+     <p class="header">诊断结论</p>
+     <div class="panel-detail">
+         <div class="panel-content" id=conclude-container>
+             <p>
+                 1. 综合体格检查,主诉,临床症状,生化及影像检查,确诊为猫肠胃炎
+             </p>
+             <p>
+                 2. 其症状有呕吐、精神沉郁、腹痛、腹泻是本病的主要症状。在以胃炎为主的胃肠炎时，病猫精神沉郁、体温轻微上升、食欲废绝、呕吐和腹痛。
+             </p>
+             <p class="none">
+                 3. 病猫表现缩腹，不断回顾腹部。另一特征为渴欲明显增加，但饮水后即发生呕吐。
+             </p>
+             <p class="none">
+                 4. 其症状有呕吐、精神沉郁、腹痛、腹泻是本病的主要症状。在以胃炎为主的胃肠炎时，病猫精神沉郁、体温轻微上升、食欲废绝、呕吐和腹痛。
+             </p>
+             <p class="none">
+                 5. 其症状有呕吐、精神沉郁、腹痛、腹泻是本病的主要症状。在以胃炎为主的胃肠炎时，病猫精神沉郁、体温轻微上升、食欲废绝、呕吐和腹痛。
+             </p>
+         </div>
+         <div class="volume-wrap" id=js-volume-3>
+             <img src="./c-img/volume/volume-circle.png" class="volume-circle" alt=""/>
+             <img src="./c-img/volume/volume.gif" class="volume volume-gif" alt=""/>
+             <img src="./c-img/volume/volume.png" class="volume volume-png" alt=""/>
+         </div>
+         <img src="./c-img/submit-button.png" class="submit-button" alt="确认按钮"/>
+     </div>
+ </div>
+
+ <script src="./c-js/resource.js"></script>
+ <script src="./c-js/loading.js"></script>
+ <!--<script src="./c-js/load-ani.js"></script>-->
+ <script src="./c-js/bottom.js"></script>
+</body>
+</html>

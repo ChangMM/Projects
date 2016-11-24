@@ -1,0 +1,302 @@
+/**修改字体**/
+body{
+    font-family: PT Sans,Arial, Helvetica,sans-serif;
+    font-size:14px;
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: PT Sans,Arial, Helvetica,sans-serif;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/****调整导航栏的样式****/
+.navbar-collapse{
+    padding-left:0;
+    padding-right: 0;
+}
+
+.navbar-nav>li{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    padding: 8px 24px;
+    border-radius:0;
+}
+
+/*******banner上内容块的修改******/
+#main-slider .carousel .carousel-content{
+    padding:10px 20px;
+    background-color: rgba(0,0,0,0.7);
+    margin-top: 320px;
+    border-radius: 2px;
+    max-width:600px;
+}
+#main-slider .carousel .carousel-content h1{
+    font-size: 24px;
+}
+
+#main-slider .carousel .btn-slide{
+    border-radius: 2px;
+    margin-top:10px;
+}
+
+/**修改banner上的圆点**/
+#main-slider .carousel-indicators li,#main-slider .carousel-indicators .active{
+    height:14px;
+    width:14px;
+}
+#main-slider .carousel-indicators li:after{
+    height:18px;
+    width:18px;
+}
+#main-slider .carousel-indicators .active:after{
+    height:18px;
+    width:18px;
+    background-color: #c52d2f;
+}
+
+/** banner 背景图的修改版***/
+#main-slider .carousel .item{
+    margin-top: -1px;
+    height:550px;
+}
+/*********修改news模块*******/
+.news-lst .header{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Microsoft YaHei";
+    color: #C56363;
+    margin: 0;
+}
+.news-lst .info-wrap{
+    margin-top: -2px;
+    margin-bottom: 5px;
+}
+.news-lst .info-wrap span{
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    color: #888;
+    margin-right: 10px;
+}
+.news-lst .para{
+    font-size: 14px;
+    color: #888;
+}
+.news-lst .img-wrap{
+    width:100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+.news-lst .item{
+    border-bottom: none;
+
+}
+.news-lst .item:hover{
+    background-color: #ddd;
+}
+.news-lst .item a{
+    text-decoration: none;
+}
+
+
+/****修改NOTICE模块***/
+.headline{
+    padding: 38px 0 5px 0;
+}
+.headline .rt{
+    margin-top: -44px;
+}
+.headline .rt a{
+    color: #c52d2f;
+}
+.headline .rt a:hover{
+    text-decoration: underline;
+}
+
+.events-lst .item{
+    padding: 6px 0 6px 0;
+}
+
+.events-lst .item .c1{
+    padding-top: 0;
+    width:60px;
+}
+.events-lst .item .c1 .tx_verd{
+    font-size: 20px !important;
+}
+.events-lst .item .c1 .tx_verd:last-child{
+    font-size: 18px !important;
+}
+.events-lst .item .c2{
+    text-align: justify;
+}
+
+/*****新加的schedule的样式*****/
+.clearfix {
+    *display:inline-block;
+    *zoom:1;
+}
+.clearfix:after {
+    display:block;
+    content:' ';
+    clear:both;
+    height:0;
+    visibility: hidden;
+}
+.schedule-lst{
+    margin:0;
+    padding:0;
+}
+.schedule-lst li{
+    list-style: none;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.schedule-lst li .left{
+    float: left;
+}
+.schedule-lst li .time{
+    width: 42px;
+    margin-right: 15px;
+    background: url(./img/all-small.png) no-repeat 9px -410px;
+    padding-bottom: 22px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    padding-top: 2px;
+    text-transform: uppercase;
+}
+.schedule-lst li .time b{
+    line-height:20px;
+}
+.schedule-lst li .time2{
+    color: #bdbdbd;
+    background: url(./img/all-small.png) no-repeat 33px -259px;
+}
+
+.schedule-lst li a{
+    display: block !important;
+}
+
+/*******course 模块******/
+.course-headline{
+    margin-top: -30px;
+    height:52px !important;
+    padding-top: 10px !important;
+}
+.row form select{
+    width: 100% !important;
+}
+.row form input{
+    width:100% !important;
+}
+/*****右边新加的四部分****/
+.new-row{
+    margin-top: 20px;
+    font-size: 0;
+}
+.new-row .img-item{
+    width:50%;
+}
+
+.new-row .apply-button{
+    margin-top: 10px;
+    font-size: 0;
+    text-align: center;
+}
+.new-row .apply-button img{
+    width: 100%;
+
+}
+.new-row .apply-button:hover{
+    cursor: pointer;
+    background-color: #eee;
+}
+
+    /***最后一行的新模块**/
+.new-module >div{
+    margin-top: 40px;
+}
+.new-module .link-wrap ul{
+    font-size: 0;
+    padding:0;
+    margin:0;
+}
+.new-module .link-wrap ul li{
+    float: left;
+    text-align: center;
+    width:20%;
+    height: 120px;
+    border-radius: 2px;
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+}
+.new-module .link-wrap ul li:hover{
+    background-color: #eeeeee;
+}
+
+.new-module .link-wrap ul li:hover p{
+    text-decoration: underline;
+}
+
+.new-module .link-wrap ul li img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height:70px;
+    max-width: 80%;
+}
+.new-module .link-wrap ul li p{
+    margin: auto;
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    background-color: #eeeeee;
+    height: 40px;
+    color:#999;
+}
+.new-module .link-wrap ul li p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/******footer******/
+#footer{
+    height: auto;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+#footer #content{
+    width:1100px;
+}
+
+#optics{
+    height:80px;
+    position: relative;
+    padding-left: 80px;
+}
+#optics img{
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+#optics .info{
+    height:60px;
+    position: absolute;
+    top:10px;
+}
+#optics .info.last{
+    left:600px;
+}
+
+
+

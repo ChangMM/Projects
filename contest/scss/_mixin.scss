@@ -1,0 +1,16 @@
+@mixin opacity($time,$delay:0s){
+  -webkit-animation:opacity $time linear infinite $delay;
+  -moz-animation:opacity $time linear infinite $delay;
+  animation:opacity $time linear infinite $delay;
+}
+
+@keyframes opacity{
+  0% {  opacity: 0.8;  }
+  50%{ opacity: 0.2;  }
+  100%{opacity: 0.8; }
+}
+@-webkit-keyframes opacity{
+  0% {  opacity: 0.8;  }
+  50%{ opacity: 0.2;  }
+  100%{opacity: 0.8; }
+}

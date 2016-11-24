@@ -1,0 +1,138 @@
+@import "base";
+@import "frame";
+@import "panel-item";
+@import "panel-detail";
+
+.left-main{
+  //显示狗狗的基本信息
+  .dog-info-panel{
+    top:0;
+    left:140px;
+    transform: translateZ(0px) rotateY(-90deg);
+    -webkit-transform: translateZ(0px) rotateY(-90deg);
+    -moz-transform: translateZ(0px) rotateY(-90deg);
+    transition:all 0.2s ease;
+    -webkit-transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+    &.active{
+      transform: translateZ(0px) rotateY(0deg);
+      -webkit-transform: translateZ(0px) rotateY(0deg);
+      -moz-transform: translateZ(0px) rotateY(0deg);
+    }
+    .panel-content{
+      position: relative;
+      .avatar{
+        position: absolute;
+        width:100px;
+        top:10px;
+        right:40px;
+      }
+    }
+  }
+}
+/**第一个场景的菜单按钮***/
+.side-menu-wrap{
+  .side-menu-item{
+    position: absolute;
+    @include square(200px);
+    img{
+      @include abs_center;   //绝对布局居中
+      &.side-menu-circle-2{
+        @include rotate(30s,0s,true);
+        @include square(180px);
+        &.side-menu-circle-2-active{
+          opacity: 0;
+        }
+      }
+      &.side-menu-circle-1{
+        @include rotate(25s,0s,false);
+        @include square(200px);
+      }
+      &.side-menu-1{
+        @include square(120px);
+      }
+    }
+    &.side-menu-item-1{
+      left:-50px;
+      top:20px;
+    }
+    &.side-menu-item-2{
+      right:80px;
+      top:200px;
+    }
+    &.side-menu-item-3{
+      left:-10px;
+      bottom:0;
+    }
+    &.active{
+      img.side-menu-circle-2.side-menu-circle-2-active{
+        @include opacity(1.5s);
+      }
+    }
+  }
+}
+.right-panel{
+  .panel-item-1{
+    margin-top:40px;
+    margin-left:-10px;
+    .panel-content{
+      max-height: 60px;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling:touch;
+    }
+  }
+  .panel-item-2{
+    margin-top:60px;
+    margin-left:-10px;
+    .panel-content-wrap{
+      padding-top:40px;
+      padding-bottom:40px;
+    }
+  }
+  .panel-item-3{
+    margin-top: 100px;
+    margin-left:-5px;
+    .panel-content-wrap{
+      padding-bottom:60px;
+    }
+  }
+  .panel-item-4{
+    margin-top: 100px;
+    margin-left:-5px;
+    .panel-content-wrap{
+      padding-top:40px;
+      padding-bottom:40px;
+    }
+  }
+  .result-info-panel{
+    left:-408px;
+    top:52px;
+    .panel-content {
+      font-size: 14px;
+    }
+    p{
+      padding:5px;
+    }
+    .heart-gif{
+      width:80%;
+    }
+    transform: translateZ(0px) rotateY(-90deg);
+    -webkit-transform: translateZ(0px) rotateY(-90deg);
+    -moz-transform: translateZ(0px) rotateY(-90deg);
+    transition:all 0.2s ease;
+    -webkit-transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+    &.active{
+      transform: translateZ(0px) rotateY(0deg);
+      -webkit-transform: translateZ(0px) rotateY(0deg);
+      -moz-transform: translateZ(0px) rotateY(0deg);
+    }
+  }
+  .intro{
+    margin-top: 50px;
+    text-align: right;
+    margin-left:-10px;
+    width:360px;
+    color: $font_color;
+  }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iLine</title>
+	<link rel="stylesheet" href="base/normalize.css">
+	<link rel="stylesheet" href="base/anim.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/index.css">
+	
+</head>
+<body>
+	<div class="nav">
+		<div class="main-wrapper">
+			<div class="logo">
+				<img src="images/you.jpg" alt="">
+			</div>
+			<div class="menu">
+					<a class="menuChild" href="#">精品</a>
+					<a class="menuChild" href="#">热门</a>
+					<a class="menuChild" href="#">发起队列</a>
+					<a class="menuChild" href="#">反馈</a>
+					<a class="menuChild" href="#">关于我们</a>	
+			</div>
+			<div class="login logout">
+				<span><a href="#" id="login">登陆</a>|<a href="#" id="register">注册</a></span>		
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="main-wrapper">
+			<div class="main-left column">
+				<div class="card-wrapper">
+					<div class="card">
+						<div class="card-user">
+							<img src="images/zuozhu.jpg" alt="">
+							<span>明明三省</span>
+						</div>
+						<div class="card-theme">
+							<a href="shenhui.html"><span><i class="fa fa-tags"></i>神回复</span></a>
+						</div>
+						<div class="card-title">
+							<span class="card-look"><i class="fa fa-eye"></i>浏览(500)</span>
+							<span class="card-time"><i class="fa-clock-o fa fa-1x"></i>2014年11月11号</span>
+						</div>
+						
+						<div class="card-content">
+							<p>5个小朋友分一个蛋糕，只准切三刀，该怎样才能平分？</p>
+						</div>
+						<div class="card-bottom">
+							<span><i class="fa fa-pencil"></i>站队</span>
+							<span><i class="fa fa-thumbs-o-up"></i>赞(96)</span>
+							<span><i class="fa fa-heart-o"></i>收藏(96)</span>
+							<span><i class="fa fa-hand-o-down"></i>举报</span>
+						</div>
+					</div>
+					<div class="feedback">
+						<div class="card-feedback">
+							<img src="images/woailuo.jpg" alt="">
+							<div class="feedback-title">
+								<span class="feedback-user">我爱明明</span>
+								<span class="feedback-time"><i class="fa-clock-o fa fa-1x"></i>1年前</span>
+								<span><i class="fa fa-thumbs-o-up"></i>赞(96)</span>
+							</div>
+							<div class="feedback-content">
+								<span>一刀砍死一个小朋友，然后两刀把蛋糕四等分。</span>
+							</div>
+						</div>
+					</div>
+					<div class="comment-input">
+						<textarea name="comment" id="comment" class="comment" rows="6"></textarea>
+						<button>评论</button>
+					</div>	
+				</div>			
+			</div>
+			<div class="main-right column">
+				<div class="module">
+					<header><span><i class="fa-map-marker fa fa-12x"></i>热门标签</span></header>
+					<div class="bread">
+						<span><a href="#">队形贴</a></span>
+						<span><a href="#">神回复</a></span>
+						<span><a href="#">拼段子</a></span>
+						<span><a href="#">队形贴</a></span>
+						<span><a href="#">等你添加</a></span>
+					</div>
+				</div>
+				<div class="liner">
+					<header><span><i class="fa-map-marker fa fa-12x fa-pinterest"></i>人气用户</span></header>
+					<div class="line">
+						<img src="images/you.jpg" alt="">
+						<span>明明三省</span></div>
+					<div class="line">
+						<img src="images/you.jpg" alt="">
+						<span>明明三省</span>
+					</div>
+					<div class="line">
+						<img src="images/you.jpg" alt="">
+						<span>明明三省</span>
+					</div>
+					<div class="line">
+						<img src="images/you.jpg" alt="">
+						<span>明明三省</span>
+					</div>
+					<div class="line">
+						<img src="images/you.jpg" alt="">
+						<span>明明三省</span>
+					</div>
+					<div class="line">
+						<img src="images/you.jpg" alt="">
+						<span>明明三省</span>
+					</div>
+					<div class="line">
+						<img src="images/you.jpg" alt="">
+						<span>明明三省</span>
+					</div>
+					<div class="line">
+						<img src="images/you.jpg" alt="">
+						<span>明明三省</span>
+					</div>
+					<div class="line">
+						<img src="images/you.jpg" alt="">
+						<span>明明三省</span>
+					</div>
+					<!-- 解决最后三个不能justify的空标签 -->
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="footer">
+		
+	</div>
+	
+	<div class="loginmask" id="loginmask">
+		<div class="loginwindow animated bounceIn" id="loginwindow">
+				<!-- <header>登陆</header> -->
+				<i class="fa fa-2x fa-remove loginclose"></i>
+				<input type="text" class="username" id="login-username" placeholder="用户名">	
+				<input type="password" class="password" id="login-password"  placeholder="密码">
+				<button class="login-button">进入iLine</button>
+				<div><a href="#" class="left" id="quickreg">快速注册</a><a href="#" class="right" id="forgetpass">忘记密码</a></div>
+		</div>
+	</div>	
+	<div class="registermask" id="registermask">
+		<div class="registerwindow animated bounceIn" id="registerwindow">
+		<!-- 	<header>注册</header> -->
+			<i class="fa fa-2x fa-remove registerclose"></i>
+			<input type="text" class="username" id="register-username" placeholder="用户名">	
+			<input type="email" class="email" id="email"  placeholder="邮箱">
+			<input type="password" class="password" id="register-password"  placeholder="密码">
+			<input type="password" class="spassword" id="s-register-password"  placeholder="核对密码">
+			<button class="register-button">提交</button>
+			<div><a href="#" class="left" id="hashao">已有账号</a><a href="#" class="right" id="forgetpass1">忘记密码</a></div>
+		</div>
+	</div>
+	<div class="forgetpassmask" id="forgetpassmask">
+		<div class="forgetpasswindow animated bounceIn" id="forgetpasswindow">
+			<header>密码竟然都忘了。。</header>
+			<i class="fa fa-2x fa-remove forgetpassclose"></i>	
+			<input type="email" class="email" id="email"  placeholder="输入你的邮箱以找回密码">
+			<button class="getpass-button">找回密码</button>
+		</div>
+	</div>
+	<div class="errorTip">
+		<p class="errormsg">邮箱格式对了吗？</p>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.js"></script>
+<script type="text/javascript" src="js/jquery-2.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>

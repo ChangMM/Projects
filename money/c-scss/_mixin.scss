@@ -1,0 +1,119 @@
+@mixin abs_center(){
+  margin:auto;
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+}
+
+@mixin square($length){
+  height: $length;
+  width: $length;
+}
+
+@mixin circle($length){
+  height: $length;
+  width: $length;
+  border-radius: 50%;
+}
+
+//旋转
+@mixin rotate($time,$delay,$dir:true){
+  @if $dir == true{
+    -webkit-animation:rotate $time linear infinite $delay;
+    -moz-animation:rotate $time linear infinite $delay;
+    animation:rotate $time linear infinite $delay;
+  }@else{
+    -webkit-animation:nev-rotate $time linear infinite $delay;
+    -moz-animation:nev-rotate $time linear infinite $delay;
+    animation:nev-rotate $time linear infinite $delay;
+  }
+}
+@keyframes rotate{
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate{
+  0% {
+    -webkit-transform:rotate(0deg);
+  }
+  100% {
+      -webkit-transform:rotate(360deg);
+  }
+}
+
+@keyframes nev-rotate{
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(-360deg);
+  }
+}
+@-webkit-keyframes nev-rotate{
+  0% {
+    -webkit-transform:rotate(0deg);
+  }
+  100% {
+      -webkit-transform:rotate(-360deg);
+  }
+}
+
+//字体透明变化
+@mixin opacity($time,$delay:0s){
+  -webkit-animation:opacity $time linear infinite $delay;
+  -moz-animation:opacity $time linear infinite $delay;
+  animation:opacity $time linear infinite $delay;
+}
+
+@keyframes opacity{
+  0% {  opacity: 1;  }
+  50%{ opacity: 0.2;  }
+  100%{opacity: 1; }
+}
+@-webkit-keyframes opacity{
+  0% {  opacity: 1;  }
+  50%{ opacity: 0.2;  }
+  100%{opacity: 1; }
+}
+
+
+//错误闪烁
+@mixin error($time:1.5s,$delay:0s){
+  -webkit-animation:error $time linear infinite $delay;
+  -moz-animation:error $time linear infinite $delay;
+  animation:error $time linear infinite $delay;
+}
+
+@keyframes error{
+  0%  { background-color: rgba(57,9,12,0.4);}
+  50%{ background-color: rgba(57,9,12,1); }
+  100%{ background-color: rgba(57,9,12,0.4); }
+}
+@-webkit-keyframes error{
+  0%  { background-color: rgba(57,9,12,0.4);}
+  50%{ background-color: rgba(57,9,12,1); }
+  100%{ background-color: rgba(57,9,12,0.4); }
+}
+
+
+//@mixin bottomIn(){
+//  -webkit-animation:opacity $time linear infinite $delay;
+//  -moz-animation:opacity $time linear infinite $delay;
+//  animation:opacity $time linear infinite $delay;
+//  @keyframes opacity{
+//    0% {  opacity: 1;  }
+//    50%{ opacity: 0.2;  }
+//    100%{opacity: 1; }
+//  }
+//  @-webkit-keyframes opacity{
+//    0% {  opacity: 1;  }
+//    50%{ opacity: 0.2;  }
+//    100%{opacity: 1; }
+//  }
+//}

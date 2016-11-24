@@ -1,0 +1,125 @@
+.hide {
+	visibility: hidden;
+}
+.noneopacity {
+	opacity: 0;
+}
+
+div.button-wrap{
+	font-family: impact;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+}
+
+.right-main-item {
+	transition: transform  0.5s linear;
+	-webkit-transition: transform  0.5s linear;
+	-moz-transition: transform  0.5s linear;
+}
+.right-main-item.none {
+	transition: none;
+}
+
+div.move>p, div.move>div{
+	transform: translateX(2000px);
+	-webkit-transform: translateX(2000px);
+	-moz-transform: translateX(2000px);
+}
+div.bottom-main>p:nth-child(1){
+	transition: transform  0.5s linear;
+	-webkit-transition: transform  0.5s linear;
+	-moz-transition: transform  0.5s linear;
+}
+
+div.bottom-main div.canvas-wrap>div {
+	position:absolute;
+	top:2px;
+	left: 2px;
+}
+
+div.bottom-main div.canvas-wrap>div .percentText {
+	color: #ACCFE6;
+    font-size: 25px;
+    position: absolute;
+    top: 25px;
+    left: 21px;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+div.bottom-main div.canvas-wrap>div .illName {
+	color: #7499B2;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.right-main .right-main-item.show {
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+}
+
+.right-main .right-main-item {
+	transform: translateX(450px);
+	-webkit-transform: translateX(450px);
+	-moz-transform: translateX(450px);
+	transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+}
+
+.right-main .right-main-item.side-menu-wrap{
+	transform: none;
+	-webkit-transform: none;
+	-moz-transform: none;
+}
+.right-main .right-main-item.side-menu-wrap.show .side-menu-item{
+	transform: translateZ(0px) rotateY(0deg);
+    -webkit-transform: translateZ(0px) rotateY(0deg);
+    -moz-transform: translateZ(0px) rotateY(0deg);
+}
+.right-main .right-main-item.side-menu-wrap .side-menu-item{
+	transform: translateZ(0px) rotateY(-90deg);
+    -webkit-transform: translateZ(0px) rotateY(-90deg);
+    -moz-transform: translateZ(0px) rotateY(-90deg);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+.opacityDiv.on{
+	width: 88px;
+    height: 88px;
+    position: absolute;
+    color: transparent;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 0 100px 10px #036DE6;
+    border-radius: 100px;
+    background: transparent;
+}
+
+/**
+ *dog 解剖图 
+ */
+.left-main .main-content .animal-big {
+	width: 360px;
+	height: 360px;
+}
+#js-volume-7 {
+	top: 0px;
+    left: 2px;
+    width: 84px;
+    height: 84px;
+}
+.t_100{
+	margin-left: -7px;
+}
+
+#js-percent-2 .js-percent-span{
+	font-size: 12px;
+	color: #D2BC26;
+	position: absolute;
+	top:-32px;
+	left:150px;
+}

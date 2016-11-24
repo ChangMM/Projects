@@ -1,0 +1,91 @@
+html,body{
+	height:100%;
+	width:100%;
+	font-family:"Microsoft Yahei";
+	font-size:16px;  
+}
+.main-wrapper {
+	width: 960px;
+	position:relative;
+	margin:0 auto;
+}
+
+.nav{
+	position:fixed;
+	top:0px; left:0px; 
+	width:100%;
+	min-width:960px;
+	background-color:rgba(0,0,0,0.4); 
+	height:60px; 
+	z-index:3; 
+}
+.logo{
+	position:absolute;
+}
+.menu{
+	position:absolute;
+	top:0px;
+	left:0px;  
+}
+.menu a{
+	line-height:60px; 
+	padding:20px 20px;
+	color:#fff;
+	text-decoration:none; 
+ }
+ .login.logout{
+ 	position:absolute;
+ 	height:60px;
+ 	right:0px;
+ }
+ .login.logout a{
+	line-height:60px; 
+	padding:20px 5px;
+	color:#fff;
+	text-decoration:none;
+ }
+
+ .loginmask,.registermask{
+ 	display:none; 
+ 	z-index:100;
+	height:100%;
+	width: 100%;
+	position:fixed;
+	background-color:rgba(0,0,0,0.5);
+	top:0px;
+	left:0px;
+ }
+.loginwindow,.registerwindow{
+	margin:0 auto;
+	width:400px;
+	padding:40px;
+	z-index:101;
+	background-color:#fff;
+	/*margin-top: 50%;*/
+	/*transform:translate(0,50%);*/
+}
+.loginwindow label,.registerwindow label{
+	height:40px;
+	width:200px;
+	text-align:right;
+	display: inline-block; 
+	 
+}
+.loginwindow input,.registerwindow input{
+	display:block; 
+	height:40px;
+	width:280px;
+	margin:0 auto;
+	outline:none; 
+	border-radius:5px;
+	padding:5px;
+
+	background-color:rgba(255, 255, 255, 0.0); 
+	box-shadow: 0px 2px 2px #fff,inset 0px 2px 5px #ddd;
+	border:2px solid #e3e3e3;
+	border-top:1px #ccc solid;
+}
+.registermask{
+	display:none; 
+}
+

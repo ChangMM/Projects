@@ -1,0 +1,612 @@
+.main{
+  margin: 0 auto;
+  height:768px;
+  width:1024px;
+  background: #000 url("./../img/bg.png") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+//左边
+.left-main{
+  position: absolute;
+  @include square(500px);
+  top:110px;
+  left:40px;
+  .main-content{
+    z-index: 1;
+    position: absolute;
+    @include square(500px);
+    @include abs_center;
+    img{
+      z-index: 1;
+      position: absolute;
+    }
+    .animal{
+      @include abs_center;
+      @include square(300px);
+    }
+    .circle-1{
+      @include abs_center;
+      @include rotate(30s,0s,true);
+      @include square(320px);
+    }
+    .circle-2{
+      @include abs_center;
+      @include rotate(60s,0s,true);
+      @include square(380px);
+    }
+    .circle-3{
+      @include abs_center;
+      @include rotate(80s,0s,true);
+      @include square(420px);
+    }
+    .time-wrap{
+      opacity: 0;
+      @include abs_center;
+      @include square(400px);
+      &.active{
+        opacity: 1;
+      }
+      .time-img{
+        @include abs_center;
+        @include square(400px);
+      }
+      .time-span{
+        z-index: 5;
+        height:86px;
+        line-height:86px;
+        width:86px;
+        margin: auto;
+        border: 5px solid #D2BC26;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        font-size: 50px;
+        position: absolute;
+        top:150px;
+        left:0;
+        right:0;
+        color: #D2BC26;
+        text-align: center;
+      }
+    }
+    //系统正在思考时的加速转动
+    &.active{
+      .circle-3{
+        @include rotate(2s,0s,true);
+      }
+      .circle-2{
+        @include rotate(1.5s,0s,true);
+      }
+      .circle-1{
+        @include rotate(0.75s,0s,true);
+      }
+    }
+
+    //小狗周围检查项的信息
+    .check-list-wrap{
+      @include square(300px);
+      @include abs_center;
+      .check-item{
+        display: none;
+        &.active{
+          display: block;
+        }
+        position: absolute;
+        @include square(100px);
+        .dot{
+          width:16px;
+          @include opacity(3s);
+          &.dot-2{
+            left:20px;
+            top: 15px;
+          }
+        }
+        .frame{
+          height:30px;
+        }
+        &.check-item-2{
+          right:0;
+          bottom:0;
+          .line-2{
+            width:100px;
+            top: 23px;
+            left:28px;
+          }
+          .frame-2{
+            top:70px;
+            left:128px;
+          }
+        }
+        &.check-item-3{
+          right:-35px;
+          top: 100px;
+          .line-3{
+            width:100px;
+            top: -40px;
+            left:14px;
+          }
+          .frame-3{
+            top:-57px;
+            left:107px;
+          }
+        }
+        &.check-item-4{
+          right: 9px;
+          top: 128px;
+          .line-4{
+            width:120px;
+            top: -63px;
+            left:-114px;
+          }
+          .frame-4{
+            top:-77px;
+            left:-261px;
+          }
+        }
+        &.check-item-5{
+          right: -16px;
+          top: 117px;
+          .line-5{
+            width:120px;
+            top: -135px;
+            left:-113px;
+          }
+          .frame-5{
+            top:-147px;
+            left:-191px;
+          }
+        }
+        &.check-item-6{
+          left: 70px;
+          bottom: 57px;
+          .line-6{
+            width:120px;
+            top: 8px;
+            left:-113px;
+          }
+          .frame-6{
+            top:57px;
+            left:-180px;
+          }
+        }
+        &.check-item-7{
+          right: -30px;
+          top: 140px;
+          .line-7{
+            width:100px;
+            top: 8px;
+            left:-90px;
+          }
+          .frame-7{
+            top:149px;
+            left:-175px;
+          }
+        }
+
+        &.check-item-1{
+          right: -16px;
+          top: 117px;
+          .line-1{
+            width:70px;
+            top: -126px;
+            left:-60px;
+          }
+          .frame-1{
+            top:-155px;
+            left:-78px;
+          }
+        }
+
+      }
+    }
+  }
+  .button-wrap{
+    z-index: 2;
+    &.active{
+      .button-1-active{
+        @include opacity(1.5s);
+      }
+      .button-2-active{
+        @include opacity(1.5s);
+      }
+      .button-circle-active{
+        @include opacity(1.5s);
+      }
+    }
+  }
+  .button-1-wrap{
+    position: absolute;
+    top:50px;
+    left:40px;
+    width:300px;
+    height:150px;
+    img{
+      position: absolute;
+    }
+    .dot{
+      right:10px;
+      bottom:2px;
+      width:18px;
+      @include opacity(3s);
+    }
+    .left-hand{
+      width:200px;
+      right:19px;
+      bottom:9px;
+    }
+    .button-circle{
+      @include rotate(10s,0s,false);
+      top:-38px;
+      left:-5px;
+      width:100px;
+      &.button-circle-active{
+        opacity: 0;
+      }
+    }
+    .button-1{
+      width:80px;
+      left:10px;
+      &.button-1-active{
+        opacity: 0;
+      }
+    }
+  }
+  .button-2-wrap{
+    position: absolute;
+    top:160px;
+    right:-20px;
+    width:200px;
+    height:100px;
+    img{
+      position: absolute;
+    }
+    .dot{
+      left:10px;
+      bottom:2px;
+      width:18px;
+      @include opacity(3s);
+    }
+    .right-hand{
+      width:100px;
+      left:19px;
+      bottom:9px;
+    }
+    .button-circle{
+      @include rotate(10s,0s,false);
+      top:-27px;
+      right:-5px;
+      width:100px;
+      &.button-circle-active{
+        opacity: 0;
+      }
+    }
+    .button-2{
+      width:80px;
+      top:13px;
+      right:-6px;
+      &.button-2-active{
+        opacity: 0;
+      }
+    }
+  }
+
+
+}
+
+//右边
+.right-main{
+  z-index: 2;
+  position:absolute;
+  width:400px;
+  right:0;
+  top:80px;
+  bottom:80px;
+  .right-main-item{
+    width:100%;
+    height:100%;
+    position: absolute;
+    //右边菜单切换专场
+    transform: translateZ(0px) rotateY(-90deg);
+    -webkit-transform: translateZ(0px) rotateY(-90deg);
+    -moz-transform: translateZ(0px) rotateY(-90deg);
+    transition:all 0.2s ease;
+    -webkit-transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+    &.active{
+      transform: translateZ(0px) rotateY(0deg);
+      -webkit-transform: translateZ(0px) rotateY(0deg);
+      -moz-transform: translateZ(0px) rotateY(0deg);
+    }
+  }
+}
+
+//头部
+.header-logo{
+  position: absolute;
+  height:36px;
+  left:0;
+  right:0;
+  margin:40px auto;
+}
+
+//底部
+.bottom-main {
+  position: absolute;
+  left:0;
+  right:0;
+  height:128px;
+  bottom: -200px;
+  z-index: 4;
+  transform: translateZ(0px) rotateX(-450deg);
+  -webkit-transform: translateZ(0px) rotateX(-450deg);
+  -moz-transform: translateZ(0px) rotateX(-450deg);
+  transition:all 0.3s ease;
+  -webkit-transition:all 0.3s ease;
+  -moz-transition:all 0.3s ease;
+  &.bottomIn{
+    bottom:30px;
+    transform: translateZ(0px) rotateX(0deg);
+    -webkit-transform: translateZ(0px) rotateX(0deg);
+    -moz-transform: translateZ(0px) rotateX(0deg);
+  }
+  .button{ //两侧的按钮
+    float: left;
+    width: 78px;
+    height: 50px;
+    text-align: center;
+    color: #D9C027;
+    line-height: 50px;
+    margin-left: 30px;
+    margin-top: 28px;
+    font-size: 15px;
+    font-weight:300;
+  }
+  .canvas-wrap{
+    float: left;
+    width: 92px;
+    margin-left: 36px;
+    position: relative;
+    .percentText{
+      color: #ACCFE6;
+      font-size: 25px;
+      position: absolute;
+      top: 25px;
+      left: 21px;
+      font-weight: 200;
+      letter-spacing: 4px;
+      font-family: impact !important;
+    }
+    .illName{
+      color: #7499B2;
+      text-align: center;
+      line-height: 30px;
+      font-size: 16px;
+    }
+    img{
+      width:100%;
+    }
+  }
+}
+
+//加载面板框
+.mask{
+  text-align: center;
+  z-index: 9;
+  background-color: rgba(10,16,16,0.95);
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  .mask-content{
+    margin:200px auto;
+    width:400px;
+    height:300px;
+    text-align: center;
+    .volume-wrap{
+      display: inline-block;
+      @include circle(120px);
+      background-color: black;
+      position: relative;
+      .volume-circle{
+        @include abs_center;
+        @include square(120px);
+        @include rotate(4s,0s,true);
+      }
+      .volume{
+        @include abs_center;
+        @include square(60px);
+      }
+    }
+  }
+  .mask-word{
+    margin-top: 20px;
+    color: #D2BC26;
+    font-size: 22px;
+  }
+  transform: translateZ(0px) rotateX(0deg);
+  -webkit-transform: translateZ(0px) rotateX(0deg);
+  -moz-transform: translateZ(0px) rotateX(0deg);
+  transition:all 0.2s ease;
+  -webkit-transition:all 0.2s ease;
+  -moz-transition:all 0.2s ease;
+  &.remove{
+    transform: translateZ(0px) rotateX(-90deg);
+    -webkit-transform: translateZ(0px) rotateX(-90deg);
+    -moz-transform: translateZ(0px) rotateX(-90deg);
+  }
+  .logo{
+    height:80px;
+  }
+  .welcome-word{
+    position: absolute;
+    left:0;
+    right:0;
+    top:290px;
+    font-size: 26px;
+    text-align: center;
+    color: #D2BC26;
+    opacity: 0;
+    transition:all 1s ease;
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    &.appear{
+      opacity: 1;
+    }
+  }
+}
+
+//信息提示框
+.tip-panel{
+  left:0;
+  right:0;
+  margin: auto;
+  top:40px;
+  transform: translateZ(0px) rotateX(-90deg);
+  -webkit-transform: translateZ(0px) rotateX(-90deg);
+  -moz-transform: translateZ(0px) rotateX(-90deg);
+  transition:all 0.3s ease;
+  -webkit-transition:all 0.3s ease;
+  -moz-transition:all 0.3s ease;
+  &.active{
+    transform: translateZ(0px) rotateX(0deg);
+    -webkit-transform: translateZ(0px) rotateX(0deg);
+    -moz-transform: translateZ(0px) rotateX(0deg);
+  }
+  .header{
+    color: #D2BC26 !important;
+  }
+  .panel-content{
+    text-align: center;
+    .volume-wrap{
+      display: inline-block;
+      @include circle(120px);
+      background-color: black;
+      position: relative;
+      .volume-circle{
+        @include abs_center;
+        @include square(120px);
+        @include rotate(4s,0s,true);
+      }
+      .volume{
+        @include abs_center;
+        @include square(60px);
+      }
+    }
+    .mask-word{
+      margin-top: 20px;
+      color: #D2BC26;
+      font-size: 22px;
+    }
+  }
+}
+
+.check-panel{
+  left:0;
+  right:0;
+  margin: auto;
+  top:40px;
+  transform: translateZ(0px) rotateX(-90deg);
+  -webkit-transform: translateZ(0px) rotateX(-90deg);
+  -moz-transform: translateZ(0px) rotateX(-90deg);
+  transition:all 0.3s ease;
+  -webkit-transition:all 0.3s ease;
+  -moz-transition:all 0.3s ease;
+  &.active{
+    transform: translateZ(0px) rotateX(0deg);
+    -webkit-transform: translateZ(0px) rotateX(0deg);
+    -moz-transform: translateZ(0px) rotateX(0deg);
+  }
+  .panel-content {
+    text-align: center;
+    .micro{
+      width:100px;
+    }
+    .loading-gif{
+      width:200px;
+    }
+    .loading{
+      height:30px;
+      margin: 5px auto;
+      width:240px;
+      position: relative;
+      overflow: hidden;
+      .loading-wrap{
+        top:0;
+        left:0;
+        position: absolute;
+        width:240px;
+      }
+      .loading-bar{
+        position: absolute;
+        top:3px;
+        left:-240px;
+        width:240px;
+      }
+    }
+    p{
+      color: #D2BC26;
+    }
+  }
+
+}
+.result-panel{
+  left:0;
+  right:0;
+  margin: auto;
+  top:40px;
+  transform: translateZ(0px) rotateX(-90deg);
+  -webkit-transform: translateZ(0px) rotateX(-90deg);
+  -moz-transform: translateZ(0px) rotateX(-90deg);
+  transition:all 0.3s ease;
+  -webkit-transition:all 0.3s ease;
+  -moz-transition:all 0.3s ease;
+  &.active{
+    transform: translateZ(0px) rotateX(0deg);
+    -webkit-transform: translateZ(0px) rotateX(0deg);
+    -moz-transform: translateZ(0px) rotateX(0deg);
+  }
+  .panel-content {
+    p{
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+  .volume-wrap{
+    @include circle(60px);
+    background-color: black;
+    position: absolute;
+    bottom:55px;
+    right:-10px;
+
+    .volume-circle{
+      @include abs_center;
+      @include square(60px);
+    }
+    .volume{
+      @include abs_center;
+      @include square(40px);
+    }
+    .volume-png{
+      opacity: 1;
+    }
+    .volume-gif{
+      opacity: 0;
+    }
+    &.active{
+      .volume-png{
+        opacity: 0;
+      }
+      .volume-gif{
+        opacity: 1;
+      }
+    }
+  }
+  .submit-button{
+    position: absolute;
+    bottom:-30px;
+    right: -18px;
+    height:90px;
+  }
+}
