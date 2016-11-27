@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<title>JS从糊涂到明白 - 一步一步编写计算器 - 演示5</title>
+		<link href="style/asoft.css" rel="stylesheet" type="text/css" media="all" />
+		
+		<script type="text/javascript" language="javascript">
+		<!--
+			/*---动态构建按钮控件  start---*/
+			function btn_init()
+			{
+
+				btn_list=new Array(1,2,3,4,5,6,7,8,9,0,"+","-","×","÷",".","(",")","CE","←","x^2","√x","=");  //设置一个数组，存储按键
+				var button_area	=	document.getElementById("button");    //这里就是要写入控件的地方
+ 				for(var i=0;i<btn_list.length;i++)
+				{
+				   button_area.innerHTML+=" <input type=\"button\" value=\""+btn_list[i]+"\" id=\"btn_"+btn_list[i]+"\" onclick=\"javascript:add_btn(this.value)\"/>";
+				 }
+			}
+			/*---动态构建按钮控件  end---*/
+			
+			
+			is_res=false;    //设定全局变量 is_res
+		    function add_btn(act){    //向显示屏添加运算符号
+				if (/msie/i.test (navigator.userAgent)==false) result=document.getElementById("result");
+				last_scr_con=result.value;	//保留上一屏内容,要写在设置结果标志符is_res之前
+				if(is_res==true)
+				{
+					result.value="0";    //显示屏归零 
+					is_res=false;		//将IS_RES变量标记为键盘输入状态，表示当前显示屏的数字是输入的，而非运算结果
+				}
+				if (act=="CE"){result.value="0";}
+				else if (act=="←"){result.value=result.value.substring(0,result.value.length-1);}  //添加退格键功能
+				else if (act=="x^2"){result.value=Math.pow(eval(last_scr_con),2);is_res=true;}  //添加开方功能 注意，该功能依然可扩展至立方、4次方...请自己思考！
+				else if (act=="√x"){result.value=Math.pow(eval(last_scr_con),1/2);is_res=true;}  //添加平方功能 注意，该功能依然可扩展至立方根、4次方根...请自己思考！
+				else if (act=="="){
+				   /*这里增加对=的特殊处理  亦即合并get_result（）函数--*/
+						var res_temp=result.value; 				//设置一个临时变量来进行运算符替换，以免将中间过程显示到屏幕上
+						res_temp=res_temp.replace(/[×]/g,"*");	//将所有的乘号换成*
+						res_temp=res_temp.replace(/[÷]/g,"/");	//将所有的除号换成/
+						result.value=eval(res_temp);
+						is_res=true;							//将IS_RES变量标记为结果状态，标示当前显示屏的数字是运算结果，而非输入状态。
+					/*---合并结束--*/
+				}
+				else if(isNaN(act)==false)
+				{
+					if(result.value==0){result.value="";}  
+					result.value+=act
+				}     //合并 add_num()，将数字原本的显示在屏幕上   
+				else {
+				
+			 		/*----设置一个临时变量来进行正则替换，以免将中间过程显示到屏幕上--*/
+						var result_temp	=result.value+act;	 
+						var temp_parr = "";
+			 	
+			 		/*---------------寻找整个运算式第一个数字为0且其后所跟的符号不是运算符和小数点的数字---------------*/	
+						var parr1=/(^0+)([0-9])/;        		 
+						if(parr1.test(result_temp))
+						{   //设定替换语句，将整个运算式第一个数字为0开头的数字去除
+							temp_parr = result_temp.match(parr1)[2];
+							result_temp=result_temp.replace(parr1,temp_parr);
+						}
+					/*---------------寻找整个运算式第一个数字为负号 - 的数字---------------*/
+						var parr2=/(^-*)(0*)(.*)/;				  				  
+						if(parr2.test(result_temp))
+						{             //将非负号的符号去除
+							temp_parr = result_temp.match(parr2)[1]+result_temp.match(parr2)[3];
+							result_temp=result_temp.replace(parr1,temp_parr);
+						}
+				
+                	/*---------------将当前运算式中除运算符号外的所有数字取出---------------*/
+						var parr3=/(?=[+-×÷]){1}([0-9.]+)(?=[+-×÷]){1}/g;     
+						if(parr3.test(result_temp))
+						{             	 
+							temp_parr = result_temp.match(parr3);    //用match方法取出当前式子中的数字
+							for(var i=0;i<temp_parr.length;i++)
+							{
+								var nozero_parr=Number(temp_parr[i]);   	//让每一个数字都成为一个合法数值
+								result_temp=result_temp.replace(temp_parr[i],nozero_parr);
+							}
+						}                       
+				
+					/*----------
+					--寻找算式中连续出现的运算符号，诸如++，x-+等---------------*/
+						var parr4=/[^0-9]{2,}/g; 					 
+
+						if(parr4.test(result_temp))
+						{             	 
+							temp_parr = result_temp.match(parr4);    
+							for(var i=0;i<temp_parr.length;i++)
+							{
+					 			var cur_sign = new Array(temp_parr[i].substring(0,1),temp_parr[i].substring(1,2));  //取出符号串的前两个符号            //创建一个数组，将取出来的符号串的第一个符号和第二个符号存入一个数组
+                    			var temp_sign="";
+                    			if(cur_sign[0]!="(")
+                    			{
+                    				if(cur_sign[1]=="-"||cur_sign[1]=="(")
+                    				{
+                    					temp_sign=cur_sign[0]+cur_sign[1];
+                    				}else{
+                    					temp_sign="";
+                    				}  //如果第二个符号不是负号，那么只保留第一个符号，否则就保留两个符号
+                    			}
+				    			result_temp=result_temp.replace(temp_parr[i],temp_sign);
+				    		}
+						}
+				 
+				 		result.value=result_temp;
+				
+					}
+				}
+
+		-->
+		</script>
+    </head>
+    <body onload="btn_init()">
+		<div id="main_div">
+	    <!--content start-->
+	    <p style="text-align:center;font-size:20px;color:blue">演示5 - 功能扩展 - 添加退格键、乘方、开方、左右括号</p>
+	    	<div id="calc">
+	       		<!--这里是显示屏 start-->
+	       		<div id="screen"><input type="text" readonly="readonly" id="result" value="0"></div>
+	       		<!--这里是显示屏 end-->
+	       		<!--这里是功能键 start-->         
+	       		<div id="button"></div>
+	       		<!--这里是功能键 end-->
+	    	</div>
+	    <!--content end-->
+	    </div>
+	</body>
+</html>

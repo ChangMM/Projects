@@ -1,0 +1,90 @@
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font-family:"Microsoft Yahei";font-size:12px;color:#333;line-height:150%;background:#fff;}
+a:link,a:visited{color:#333;text-decoration:none;}
+a:hover{color:#c00;text-decoration:underline;}
+
+/*************************/
+.subitem{
+	position:absolute;
+	font-size:12px;color:#333;
+	width:460px;
+	min-height:300px;
+	padding:0 4px 0 8px;
+	background-color:#fff; 
+	box-shadow:1px 1px 3px #eee,-1px -1px 3px #eee;
+	top:3px; left:190px; 
+	z-index:2; 
+}
+dl{
+	border-top:1px solid #FFEFD7;
+	padding:6px 0;
+	overflow:hidden;/**这两句*/
+	zoom:1;
+}
+dt{
+	padding-right:6px;
+	font-weight:bold;
+	float:left;
+	width:54px;
+	line-height:26px;
+	text-align:right;
+	color:#c00;
+}
+dd{
+	float:left;
+	width:380px;
+	overflow:hidden;
+	zoom:1;
+}
+.subitem .fore{border-top:none;}
+.subitem em{
+	float:left;
+	margin:4px 0px;
+	padding:0px 8px;
+	border-left:1px solid #ccc;
+	font-style:normal;
+}
+ul{
+	position:absolute;
+	width:200px;
+	background-color:#FAFAFA; 
+}
+li.mainitem{
+	display:inline-block;
+	width:200px;
+	font-size:16px;
+	padding:3px 0px;
+	border-bottom:1px  solid #fff;    
+}
+.mainitem span{
+	padding:3px 0px 3px 10px; 
+	height:24px;   
+	line-height:24px;
+	width:180px;
+	display:inline-block;
+
+ }
+.mainitem a:hover{
+	font-weight:bold; 
+}
+.mainitem i{
+	font-style: normal;
+	color:#ccc;font-size:20px;
+	float:right;
+	padding:0 5px;   
+}
+.hide{
+	display: none;
+}
+
+.mainitem:hover span{
+	box-shadow:0px 1px 3px #eee,;
+	background-color:#fff; 
+	position:relative;
+	z-index:3;  
+}
+.menu{
+	position:relative;
+	top:100px;left:100px; 
+}
